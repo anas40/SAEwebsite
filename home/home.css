@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+body{
+    width: 100vw ;
+}
+#main_image{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./one.jpg); 
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    }
+
+#header_text{
+    color: rgb(255, 255, 255);
+    font-size: 20vw;
+    
+    font-family: monospace;
+    font-weight: 800;
+    height: 100vh;
+    padding-top: 28vh;
+}
+p{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    
+}
+
+@media screen and (min-width: 700px){
+    #header_text{
+        font-size:10vw;
+    }
+}
