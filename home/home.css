@@ -1,25 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box !important;
-}
-body{
-    width: 100vw ;
-}
 #main_image{
-    width: 100vw;
-    height: 100vh;
-    background-image: url(./one.jpg); 
-    background-size: 100vw 100vh;
+
+    background-image: url(../images/one.jpg); 
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     }
 
 #header_text{
     color: rgb(255, 255, 255);
     font-size: 20vw;
-    
     font-family: monospace;
     font-weight: 800;
     height: 100vh;
@@ -30,6 +19,16 @@ p{
     width: fit-content;
     text-align: center;
     
+}
+
+.parts{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 200px;
+    
+}
+.parts div{
+    border: 2px solid goldenrod;
 }
 
 @media screen and (min-width: 700px){
