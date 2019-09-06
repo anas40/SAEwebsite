@@ -1,0 +1,38 @@
+
+#main_image{
+
+    background-image: url(../images/one.jpg); 
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    }
+
+#header_text{
+    color: rgb(255, 255, 255);
+    font-size: 20vw;
+    font-family: monospace;
+    font-weight: 800;
+    height: 100vh;
+    padding-top: 28vh;
+}
+p{
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    
+}
+
+.parts{
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+    height: 200px;
+    
+}
+.parts div{
+    border: 2px solid goldenrod;
+}
+
+@media screen and (min-width: 700px){
+    #header_text{
+        font-size:10vw;
+    }
+}
