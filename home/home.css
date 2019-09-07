@@ -1,9 +1,9 @@
 
 #main_image{
-
     background-image: url(../images/one.jpg); 
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    opacity: 1;
     }
 
 #header_text{
