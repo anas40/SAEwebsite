@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
+
 
 #main_image{
-    background-image: url(../images/one.jpg); 
+    background-image: url(../images/real.jpeg); 
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    opacity: 1;
     }
 
 #header_text{
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 20vw;
     font-family: monospace;
     font-weight: 800;
@@ -23,16 +25,105 @@ p{
 
 .parts{
     display: grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-    height: 200px;
+    grid-template-columns: 1fr;
+    min-height: 200px;
+    grid-row-gap: 50px;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 200px;
+    grid-column-gap: 30px; 
+}
+
+.wrapper .heading-text{
+    font: 700 30px Ubuntu ;
     
 }
-.parts div{
-    border: 2px solid goldenrod;
+.parts section{
+    border-top: 2px solid goldenrod;
+
+}
+
+.grid-view{
+    margin: auto;
+    width:95%;
+    margin-top: 100px;
+    font-family: monospace;
+}
+#grid-head-text{
+    width: fit-content;
+    margin: auto;
+    margin-bottom:50px;
+    font-size:3.5em;
+    font-family: Lobster;
+    
+}
+
+.grid-text{
+    margin-bottom: 12px;
+    padding:12px;
+    margin-left: 8%;
+}
+.grid-text > div{
+    margin: 25px; 
+}
+.grid-text .body-text{
+    text-align: justify;
+    font-family: Lato;
+    font-size: 20px;
+}
+.grid-text .link{
+    text-decoration: none;
+    font-size: 2em;
+    text-align: left;
+}
+.icon{
+    padding: 12px;
+     
+}
+.icon div{
+    /* box-shadow: 0 0 15px -5px rgba(0,0,0,0.32); */
+    background: rgb(245, 244, 244) ;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.icon img{
+    height: 50px;
+    width: 50px;
+}
+
+.grid-image{
+    display: flex;
+    align-items: center;
+   
+}
+.grid-image .image-container{
+    width: fit-content;
+   
+}
+.grid-image .image-container img{
+    height :300px;
+    border-radius: 12px;
+    box-shadow:0 2px 6px 3px rgba(0,0,0,0.32);
+    width: 80%;
+    display: block;
+    margin: auto;
+    
 }
 
 @media screen and (min-width: 700px){
     #header_text{
         font-size:10vw;
     }
+}
+@media screen and (max-width: 700px){
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr;
+        min-height: 200px;
+        grid-column-gap:30px; 
+}
 }
