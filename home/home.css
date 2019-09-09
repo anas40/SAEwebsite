@@ -23,7 +23,8 @@ p {
     width: fit-content;
     text-align: center;
     transform: rotate(-2deg);
-    border-bottom: 3px solid goldenrod;
+    border-left: 3px solid goldenrod;
+    padding-left: 2%;
 
 }
 
