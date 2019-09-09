@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
+.text-block{
+    margin-left:10px;  
+    margin-top:10px;
+    color:navy;
+    text-align: center;
+}
+.line{
+    color: black;
+    height:3px;
+    background-color: navy;
+}
+.text-block h1{
+    font-family:Ubuntu;
+    cursor:default;
+}
+#cars-head{
+    padding:2%;
+}
+.image-box{
+    text-align: center;
+}
+.image-box img{
+    border-radius:50%;
+    width:50%;
+    height:100%
+}
+.container .row  .col-md-6{
+    padding:5%;
+}
+.row .col-md-6{
+    padding:2%;
+}
+.name{
+    text-align: center;
+    color:purple;
+    margin-top:1.5%;
+}
+
+.name h1{
+    text-decoration: none;
+    color:purple;
+    cursor: default;
+    margin-top:2%;
+}
+.name a{
+    text-decoration: none;
+    color:purple;
+}
+
+.col-md-6 h3{
+    text-align:left;
+    color:navy;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.desig{
+    font-weight: bold;
+}
+.team_mem{
+    margin-top:5%;
+}
+#carspecstable{
+    margin-top:5%;
+}
+.col-sm-12{
+    padding:5%;
+}
+.col-sm-12 h3{
+    color:navy;
+}
+.points li{
+    padding:.4%;
+    margin-left:5%;
+}
+  
