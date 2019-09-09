@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="../general.css">
   <script defer src="https://friconix.com/cdn/friconix.js"></script>
-  <script src="https://kit.fontawesome.com/ad97df046f.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/ad97df046f.js"></script> -->
 </head>
 
 <body>
@@ -82,7 +82,7 @@
             </div>
           </div>
         </section>
-        <section class="wrapper">
+        <section class="wrapper alter-grid">
           <div class="grid-image">
             <div class="image-container"><img src="../images/real.jpeg" alt="car">
             </div>
@@ -131,14 +131,43 @@
 
     </section>
     <!-- facebook page -->
-    <section>
-      <div id="fb-page12">
-        <div class="fb-page" data-href="https://www.facebook.com/ZHCETFormulaRacing/" data-tabs="timeline"
-          data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true"
-          data-hide-cover="false" data-show-facepile="true">
-          <blockquote cite="https://www.facebook.com/ZHCETFormulaRacing/" class="fb-xfbml-parse-ignore"><a
-              href="https://www.facebook.com/ZHCETFormulaRacing/">ZHCET Formula Racing</a></blockquote>
+    <section id="page-container">
+      <div class="first">
+        <div class="some-headings">
+          <h3>Any Query?</h3>
         </div>
+        <div id="form-container">
+          <form action="#" method="POST">
+            <div>
+              <input type="text" name="message" placeholder="Message">
+            </div>
+            <div>
+              <input type="text" name="name" placeholder="Your name">
+            </div>
+            <div>
+              <input type="email" name="email" placeholder="Your Email">
+            </div>
+            <div id="button-setter" >
+              <button type="submit">Send Query</button>
+            </div>
+          </form>
+        </div>
+
+      </div>
+      <div class="second">
+        <div>
+          <h3 class="some-headings">Social media updates</h3>
+        </div>
+        <div id="fb-page12">
+
+          <div class="fb-page" data-href="https://www.facebook.com/ZHCETFormulaRacing/" data-tabs="timeline"
+            data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true"
+            data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/ZHCETFormulaRacing/" class="fb-xfbml-parse-ignore"><a
+                href="https://www.facebook.com/ZHCETFormulaRacing/">ZHCET Formula Racing</a></blockquote>
+          </div>
+        </div>
+
       </div>
     </section>
     <!-- facebook page end -->
@@ -160,15 +189,15 @@
 
           <ul class="list-unstyled">
             <li>
-             Email : <a href="mailto:zhcetformularacing@gmail.com">zhcetformularacing@gmail.com</a>
+              Email : <a href="mailto:zhcetformularacing@gmail.com">zhcetformularacing@gmail.com</a>
             </li>
             <br>
             <li>
-             Phone No. : <a href="tel:+919876543210"></a>+91 9876543210</a>
+              Phone No. : <a href="tel:+919876543210">+91 9876543210</a>
             </li>
             <br>
             <li>
-              <address>Address :<br>  SAE zhcet,AMU,Aligarh,Uttar Pradesh,India</address>
+              <address>Address :<br> SAE zhcet,AMU,Aligarh,Uttar Pradesh,India</address>
             </li>
           </ul>
 
@@ -227,81 +256,56 @@
 
         </div>
         <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="mailto:zhcetformularacing@gmail.com">zhcetformularacing@gmail.com</a>
-            </li>
-            <li>
-              <a href="tel:+919876543210">Phone No. : +91 9876543210</a>
-            </li>
-            <li>
-              <address>Address :<br>  SAE zhcet,AMU,Aligarh,Uttar Pradesh,India</address>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
+        <!-- Grid row -->
 
       </div>
-      <!-- Grid row -->
+      <!-- Footer Links -->
 
-    </div>
-    <!-- Footer Links -->
+      <hr>
 
-    <hr>
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">Support Us</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="#!" class="btn btn-danger btn-rounded">Donate here!</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
 
-    <!-- Call to action -->
-    <ul class="list-unstyled list-inline text-center py-2">
-      <li class="list-inline-item">
-        <h5 class="mb-1">Support Us</h5>
-      </li>
-      <li class="list-inline-item">
-        <a href="#!" class="btn btn-danger btn-rounded">Donate here!</a>
-      </li>
-    </ul>
-    <!-- Call to action -->
+      <hr>
 
-    <hr>
+      <!-- Social buttons -->
+      <ul class="list-unstyled list-inline text-center" id="social-buttons">
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-fb mx-1">
+            <img src="../icons/fb.png" alt="fb link">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-tw mx-1">
+              <img src="../icons/twitter.png" alt="twitter link">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-li mx-1">
+              <img src="../icons/linkedin.png" alt="linkedin link">
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-instagram mx-1">
+              <img src="../icons/insta2.png" alt="insta link">
+          </a>
+        </li>
+      </ul>
+      <!-- Social buttons -->
 
-    <!-- Social buttons -->
-    <ul class="list-unstyled list-inline text-center">
-      <li class="list-inline-item">
-        <a class="btn-floating btn-fb mx-1">
-          <i class="fab fa-facebook-f"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-tw mx-1">
-          <i class="fab fa-twitter"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-li mx-1">
-          <i class="fab fa-linkedin-in"> </i>
-        </a>
-      </li>
-      <li class="list-inline-item">
-        <a class="btn-floating btn-instagram mx-1">
-          <i class="fab fa-instagram"> </i>
-        </a>
-      </li>
-    </ul>
-    <!-- Social buttons -->
-
-    <!-- developer -->
-    <div class="footer-copyright text-center py-3" id="developer">Developed by
-      <a href="https://mdbootstrap.com/education/bootstrap/"> Mohd Anas,Gauhar Ayyub Khas & Hammad Basit</a>
-    </div>
-    <!-- developer -->
+      <!-- developer -->
+      <div class="footer-copyright text-center py-3" id="developer"><span>Developed by</span> 
+        <a href="https://mdbootstrap.com/education/bootstrap/"> Mohd Anas,Gauhar Ayyub Khas & Hammad Basit</a>
+      </div>
+      <!-- developer -->
 
   </footer>
   <!-- Footer end-->
