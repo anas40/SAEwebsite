@@ -11,6 +11,9 @@
     height: 5vw;
     min-height: 50px;
 }
+.container{
+    margin: 0;
+}
 nav{
     position: fixed !important;
     z-index: 1;

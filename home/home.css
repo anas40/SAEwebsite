@@ -140,10 +140,10 @@ p {
     /* margin: auto; */
 }
 
-#page-container>div {
-    /* border: 2px solid blue; */
+/* #page-container>div {
+     border: 2px solid blue;
 }
-/* #page-container .first{
+#page-container .first{
     grid-area: first;
 }
 #page-container .second{
