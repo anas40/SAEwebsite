@@ -17,7 +17,7 @@ background: linear-gradient(to bottom, #434343, #000000);
     cursor:default;
 }
 #cars-head{
-    margin:relative;
+    margin-top:7%;
     margin-bottom:5%;
 }
 .image-box{
@@ -94,4 +94,25 @@ body{
     padding:.4%;
     margin-left:5%;
     /* font-size: 1.5em; */
-}  
+}   
+/*   media query our racig car header   */
+@media (max-width:400px){
+    #cars-head{
+        margin-top:20%;
+        margin-bottom:5%;
+    }
+}
+
+@media (min-width:401px) and (max-width:500px){
+    #cars-head{
+        margin-top:15.5%;
+        margin-bottom:5%;
+    }
+}
+@media (min-width:500px) and (max-width:768px){
+    #cars-head{
+        margin-top:10%;
+        margin-bottom:5%;
+    }
+    }
+}
