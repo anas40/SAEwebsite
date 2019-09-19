@@ -12,6 +12,9 @@
     height: 3vw;
     min-height: 30px;
 }
+.container{
+    
+}
 
 nav{
     position: fixed !important;
@@ -70,6 +73,7 @@ body{
     font-family: Lobster;
 }
 footer{
+    margin-bottom: 0;   
     background-color:#343a40;
     color: white;
 }
