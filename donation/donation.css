@@ -1,7 +1,45 @@
-#heading-text{
-    font: bolder 4em Ubuntu;
-    height: 100vh;
+
+body{
+    position: relative;
+    top: 100px;
 }
-#gap-filler{
-    height: 80px;
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5%;
+    min-height: calc(100vh - 100px - 2vw);
+    margin: 12px 5%;
+}
+.one{
+    /* border: 2px groove indianred; */
+    padding: 12px 5%;
+}
+.two{
+    /* border: 2px groove indianred; */
+    padding: 12px 5%;
+}
+.donation-heading{
+    text-align: center;
+    font-family: Algerian;
+}
+.donation-body{
+    padding: 12px 5%;
+    text-align: justify;
+    margin: 30px 0;
+    font-size: 24px;
+    font-family: Dosis;
+}
+#amu-icon img{
+    height: 50%;
+    width: 50%;
+    /* border: 1px solid goldenrod; */
+    margin: auto;
+    display: block;
+}
+
+@media screen and (max-width: 767px) {
+    #grid{
+        grid-template-columns: 100%;
+        row-gap: 5%;
+    }
 }
