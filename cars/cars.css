@@ -3,22 +3,25 @@
 background: #000000;
 background: -webkit-linear-gradient(to bottom, #434343, #000000);
 background: linear-gradient(to bottom, #434343, #000000);
-
+}
+body{
+    position: relative;
+    top: 58px;
 }
 .text-block{
     color:white;
     text-align: center;
-    background-color:black; 
+    background-color:black;
 }
 
 .text-block h1{
     font-family:Ubuntu;
-    font-size: 3.2em;
+    font-size: 400%;
     cursor:default;
 }
 #cars-head{
-    margin-top:7%;
-    margin-bottom:5%;
+    background-color: #000000;
+    margin-bottom: 2%;
 }
 .image-box{
     text-align: center;
@@ -30,6 +33,7 @@ background: linear-gradient(to bottom, #434343, #000000);
 }
 .row .col-md-6{
     padding:2%;
+    margin-bottom:7%;
 }
 .name{
     text-align: center;
@@ -95,24 +99,29 @@ body{
     margin-left:5%;
     /* font-size: 1.5em; */
 }   
-/*   media query our racig car header   */
+
+
+
+  /* media query our racig car header   */
 @media (max-width:400px){
-    #cars-head{
-        margin-top:20%;
-        margin-bottom:5%;
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 8vw;
+        cursor:default;
     }
 }
 
 @media (min-width:401px) and (max-width:500px){
-    #cars-head{
-        margin-top:15.5%;
-        margin-bottom:5%;
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 8vw;
+        cursor:default;
     }
 }
 @media (min-width:500px) and (max-width:768px){
-    #cars-head{
-        margin-top:10%;
-        margin-bottom:5%;
-    }
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 9vw;
+        cursor:default;
     }
 }
