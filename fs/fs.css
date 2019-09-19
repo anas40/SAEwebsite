@@ -1,0 +1,27 @@
+/* body{
+    position: relative;
+    top: 68px;
+} */
+#main-image {
+    background-image: url(../images/WhatsApp\ Image\ 2019-09-19\ at\ 22.57.16\ \(1\).jpeg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+#header-text {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    font-size: 8vw;
+    font-family: Algerian;
+    font-weight: 800;
+    height: 100vh;
+    padding-top: 40vh;
+}
+
+#header-text div {
+    margin: auto;
+    width: fit-content;
+    text-align: center;
+    border-left: 3px solid goldenrod;
+    padding-left: 2%;
+}
