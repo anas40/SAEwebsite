@@ -1,21 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
+#cars-index{
+background: #000000;
+background: -webkit-linear-gradient(to bottom, #434343, #000000);
+background: linear-gradient(to bottom, #434343, #000000);
+}
+body{
+    position: relative;
+    top: 58px;
+}
 .text-block{
-    margin-left:10px;  
-    margin-top:10px;
-    color:navy;
+    color:white;
     text-align: center;
+    background-color:black;
 }
-.line{
-    color: black;
-    height:3px;
-    background-color: navy;
-}
+
 .text-block h1{
     font-family:Ubuntu;
+    font-size: 400%;
     cursor:default;
 }
 #cars-head{
-    padding:2%;
+    background-color: #000000;
+    margin-bottom: 2%;
 }
 .image-box{
     text-align: center;
@@ -25,11 +31,9 @@
     width:50%;
     height:100%
 }
-.container .row  .col-md-6{
-    padding:5%;
-}
 .row .col-md-6{
     padding:2%;
+    margin-bottom:7%;
 }
 .name{
     text-align: center;
@@ -45,12 +49,13 @@
 }
 .name a{
     text-decoration: none;
-    color:purple;
+    color:white;
 }
 
-.col-md-6 h3{
-    text-align:left;
+.col-md-6 h1{
+    text-align:center;
     color:navy;
+    font-size: 2.2em;
 }
 
 table {
@@ -62,29 +67,61 @@ table {
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 2.5%;
+    /* overflow-wrap: break-word; */
   }
 tr:nth-child(even) {
     background-color: #dddddd;
 }
-
+body{
+    overflow-x: hidden;
+}
 .desig{
     font-weight: bold;
 }
 .team_mem{
     margin-top:5%;
+    text-align:center;
 }
 #carspecstable{
     margin-top:5%;
 }
 .col-sm-12{
-    padding:5%;
+    padding:4%;
 }
-.col-sm-12 h3{
+.col-sm-12 h1{
     color:navy;
+    font-size: 2.2em;
+    text-align:center;
 }
 .points li{
     padding:.4%;
     margin-left:5%;
+    /* font-size: 1.5em; */
+}   
+
+
+
+  /* media query our racig car header   */
+@media (max-width:400px){
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 8vw;
+        cursor:default;
+    }
 }
-  
+
+@media (min-width:401px) and (max-width:500px){
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 8vw;
+        cursor:default;
+    }
+}
+@media (min-width:500px) and (max-width:768px){
+    .text-block h1{
+        font-family:Ubuntu;
+        font-size: 9vw;
+        cursor:default;
+    }
+}
