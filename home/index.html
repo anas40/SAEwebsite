@@ -7,9 +7,11 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="../general.css">
   <script defer src="https://friconix.com/cdn/friconix.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
   <!-- <script src="https://kit.fontawesome.com/ad97df046f.js"></script> -->
 </head>
 
@@ -67,7 +69,7 @@
     </section>
     <section>
       <div id="page-container">
-        <div class="first">
+        <div class="first" data-aos="fade-up" data-aos-duration="3000">
           <div>
             <div class="some-headings">About ZFR</div>
             <div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -75,7 +77,7 @@
             </div>
           </div>
         </div>
-        <div class="second">
+        <div class="second" data-aos="fade-up">
           <div>
             <div class="some-headings">Fb update</div>
           </div>
@@ -94,11 +96,11 @@
 
     </section>
     <section class="grid-view">
-      <div class="parts">
+      <div class="parts" >
         <section class="wrapper">
-          <div class="grid-text">
+          <div class="grid-text" data-aos="fade-up">
             <div class="icon">
-              <div>
+              <div >
                 <img src="../icons/car2.png" alt="icon">
               </div>
             </div>
@@ -331,6 +333,14 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 
 </html>
+
+
+
+
+

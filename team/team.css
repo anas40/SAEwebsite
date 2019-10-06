@@ -1,0 +1,47 @@
+body{
+    background-image: url("../images/14494.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+}
+
+#firsttier{
+    margin: 50px 0;
+    /* border: 2px solid green; */
+}
+#firsttier > div{
+    width: fit-content;
+    max-width: 400px;
+    margin: auto;
+}
+
+#firsttier > div ,#second-tier>div
+{
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.582), inset 0 -1px 0 0 #dadce0;
+    border-radius: 12px;
+    background: white;
+}
+.member{
+    margin-top: 10px;
+    padding: 10px;
+    /* border: 2px solid seagreen; */
+}
+.member > div{
+    margin: 20px 0 ;
+    border: 1px dashed rebeccapurple;
+    text-align: center;
+}
+.member-image img{
+    width: 80%;
+}
+
+
+
+#second-tier{
+    margin: 100px 0;
+    display: flex;
+    /* border: 2px ridge red; */
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+}
