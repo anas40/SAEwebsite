@@ -81,7 +81,10 @@ body{
 }
 .team_mem{
     margin-top:5%;
-    text-align:center;
+    text-align:left;
+}
+.col-md-12{
+    padding: 0;
 }
 #carspecstable{
     margin-top:5%;
