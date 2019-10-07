@@ -16,6 +16,10 @@
 }
 .about-text{
     padding: 50px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 2.5rem;
+
 }
 p {
     margin: auto;
@@ -43,7 +47,6 @@ p {
 
 .wrapper .heading-text {
     font: 700 30px Ubuntu;
-
 }
 
 .parts section {
