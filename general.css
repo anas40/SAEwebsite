@@ -26,6 +26,7 @@ nav{
 .nav-item{
     margin: 12px !important;
     position: relative;
+    
 }
 .nav-link:before{
   content: "";
@@ -34,7 +35,7 @@ nav{
   height: 3px;
   bottom: 0;
   left: 0;
-  background: #9CF5A6;
+  background: rgb(206, 206, 206);
   visibility: hidden;
   border-radius: 5px;
   transform: scaleX(0);
