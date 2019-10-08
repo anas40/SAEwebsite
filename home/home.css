@@ -4,6 +4,13 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
+.bd-example{
+    position:relative;
+    top: 80px;
+    z-index: 0;
+    
+}
+
 
 #header_text {
     background: rgba(0, 0, 0, 0.6);

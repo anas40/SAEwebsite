@@ -1,5 +1,6 @@
 body{
-    background-image: url("../images/gears.jpg");
+    background-image: url("../images/background/gear-2291916_1920.jpg");
+    /* background-size: 100vw 100vh; */
     background-attachment: fixed;
 }
 main{
@@ -17,13 +18,14 @@ main{
     min-width: 300px;
     max-width: 400px;
     margin: auto;
+    transition: transform 300ms;
 }
 
 .firsttier > div ,.second-tier>div
 {
-    box-shadow: 0 0 100px 30px rgb(14, 14, 14), inset 0 -1px 0 0 #dadce0;
+    box-shadow: 0 0 20px 5px rgb(14, 14, 14), inset 0 -1px 0 0 #dadce0;
     border-radius: 12px;
-    background: #1a3120 ;
+    background: lightgray ;
 }
 .member{
     margin-top: 10px;
@@ -52,14 +54,19 @@ main{
 }
 .second-tier > div{
     margin: 50px 0;
-    flex-basis: 25% !important;
-    min-width: 300px;
+    flex-basis: 40% !important;
+    min-width: 200px;
+    max-width: 300px;
+    transition: transform 300ms; 
+}
+.second-tier > div:hover,.firsttier >div:hover{
+    transform: scale(1.1);
 }
 .linksofmembers{
     margin: 20px 0;
     display: flex;
     justify-content: space-around;
-    background-color: rgb(206, 206, 206);
+    background-color: rgb(138, 138, 138);
     margin: 0 0 -30px 0;
     border-bottom-right-radius: 12px;
     border-bottom-left-radius: 12px;
@@ -84,15 +91,19 @@ main{
     transition: transform 400ms;
     /* box-shadow: 0 0 5px 0 black; */
 }
-.perse-des{
-    color: #FDB90F;
+.perse-des,.perse-des-small{
+    color: #330926;
     font-family: Ubuntu;
 }
-.perse-des h2{
-    font-size: 3rem;
+.perse-des h2,.perse-des-small h2{
+    padding: 1%;
+    font-size: 2.7rem;
     font-weight: 700;
     border-bottom: 4px ridge black;
     color: #330926;
+}
+.perse-des-small h2{
+    font-size: 1.5rem;
 }
 .department-heading > div{
     padding: 1% 10%;
@@ -103,7 +114,7 @@ main{
     margin: auto;
     width: 80%;
     border-radius: 12px;
-    background-color: #330926;
+    background-color: #09332a;
     }
 .department-heading-box{
     border-bottom: 2px ridge white;
