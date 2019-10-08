@@ -7,24 +7,30 @@
 
 #header_text {
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 20vw;
-    font-family: Algerian;
+    font-family: Cinzel;
     font-weight: 800;
     height: 100vh;
     padding-top: 28vh;
 }
 .about-text{
     padding: 50px;
+    font-size: 22px;
+    text-align: justify;
+    line-height: 2.5rem;
+
 }
 p {
     margin: auto;
     width: fit-content;
     text-align: center;
-    transform: rotate(-2deg);
     border-left: 3px solid goldenrod;
     padding-left: 2%;
 
+}
+#header_text span{
+    /* color: rgb(211, 32, 32); */
 }
 
 .parts {
@@ -43,7 +49,6 @@ p {
 
 .wrapper .heading-text {
     font: 700 30px Ubuntu;
-
 }
 
 .parts section {

@@ -7,9 +7,13 @@
   <title>Home</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
   <link rel="stylesheet" href="home.css">
   <link rel="stylesheet" href="../general.css">
   <script defer src="https://friconix.com/cdn/friconix.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
   <!-- <script src="https://kit.fontawesome.com/ad97df046f.js"></script> -->
 </head>
 
@@ -42,7 +46,8 @@
             <a class="nav-link" href="../team/index.html"><i class="fi-xnsuxl-team-solid"></i><span>C</span>rew</a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link " href="../fs/index.html"><i class="fi-xwllxl-star-half-wide"></i><span>F</span>ormula Student</a>
+            <a class="nav-link " href="../fs/index.html"><i class="fi-xwllxl-star-half-wide"></i><span>F</span>ormula
+              Student</a>
           </li>
           <!-- <li class="nav-item">
             <a class="nav-link " href="../about us/index.html"><i class="fi-xnsuxl-friend"></i>About Us</a>
@@ -58,24 +63,25 @@
   </nav>
   <main>
     <section id="main_image">
-      <div>
+      <div data-aos="fade-up">
         <div id="header_text">
-          <p>ZHCET</p>
-          <p>Formula Racing</p>
+          <p><span>Z</span>HCET</p>
+          <p><span>F</span>ormula <span>R</span>acing</p>
         </div>
       </div>
     </section>
     <section>
       <div id="page-container">
-        <div class="first">
+        <div class="first" data-aos="fade-up" data-aos-duration="2000">
           <div>
             <div class="some-headings">About ZFR</div>
-            <div class="about-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </div>
+            <div class="about-text">ZHCET FORMULA RACING is a formula racing team of 40 quite hard working and
+              passionate undergraduate engineering students from Aligarh Muslim University who ideate, design, fabricate
+              and test a formula style race car and participate in various National as well as International formula
+              student competitions.</div>
           </div>
         </div>
-        <div class="second">
+        <div class="second" data-aos="fade-up" data-aos-duration="2000">
           <div>
             <div class="some-headings">Fb update</div>
           </div>
@@ -90,21 +96,19 @@
           </div>
         </div>
       </div>
-
-
     </section>
-    <section class="grid-view">
-      <div class="parts">
+    <section class="grid-view" >
+      <div class="parts" >
         <section class="wrapper">
-          <div class="grid-text">
+          <div class="grid-text" data-aos="fade-up">
             <div class="icon">
               <div>
-                <img src="../icons/car2.png" alt="icon">
+                <img src="../icons/racing-car.png" alt="icon">
               </div>
             </div>
             <div class="heading-text">Our Cars</div>
-            <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+            <div class="body-text">Till now our club has made 4 cars out of which ZFR4.0 is latest and we are working on
+              ZFR5.0
             </div>
             <div class="link">
               <a href="#"><span>See All..</span></a>
@@ -116,7 +120,7 @@
             </div>
           </div>
         </section>
-        <section class="wrapper alter-grid">
+        <section class="wrapper alter-grid" >
           <div class="grid-image">
             <div class="image-container"><img src="../images/formulastudent.jpg" alt="car">
             </div>
@@ -124,13 +128,14 @@
           <div class="grid-text">
             <div class="icon">
               <div>
-                <img src="../icons/car2.png" alt="icon">
+                <img src="../icons/racing-flag.png" alt="icon">
               </div>
             </div>
             <div class="heading-text">Formula Student</div>
-            <div class="body-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-            </div>
+            <div class="body-text">Being one of the most prestigious design competitions round the globe, formula
+              student is a global showdown which challenges the university undergraduates to combine hands on practical
+              appliances along with project management skills. In India, we participate in FORMULA BHARAT, SAE SUPRA and
+              Imperial to test ourselves against the teams of other prestigious universities of India.</div>
             <div class="link">
               <a href="#"><span> Know more...</span></a>
             </div>
@@ -141,7 +146,7 @@
           <div class="grid-text">
             <div class="icon">
               <div>
-                <img src="../icons/car2.png" alt="icon">
+                <img src="../icons/mechanic (1).png" alt="icon">
               </div>
             </div>
             <div class="heading-text">Our Crew</div>
@@ -330,6 +335,9 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    AOS.init();
   </script>
 </body>
 
