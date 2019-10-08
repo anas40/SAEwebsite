@@ -1,16 +1,19 @@
-
 #main_image {
     background-image: url(../images/real2.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
-.bd-example{
-    position:relative;
-    top: 80px;
+
+.bd-example {
+    margin-top: 80px;
+    position: relative;
     z-index: 0;
-    
+    width: 100%;
 }
 
+.carousel-item img {
+    height: 90vh;
+}
 
 #header_text {
     background: rgba(0, 0, 0, 0.6);
@@ -21,31 +24,32 @@
     height: 100vh;
     padding-top: 28vh;
 }
-.about-text{
+
+.about-text {
     padding: 50px;
     font-size: 22px;
     text-align: justify;
     line-height: 2.5rem;
+    width: 80%;
+    margin: auto;
+    min-width: 300px;
 
 }
+
 p {
     margin: auto;
     width: fit-content;
     text-align: center;
     border-left: 3px solid goldenrod;
     padding-left: 2%;
-
-}
-#header_text span{
-    /* color: rgb(211, 32, 32); */
 }
 
 .parts {
     display: grid;
     grid-template-columns: 1fr;
     min-height: 200px;
-    /* grid-row-gap: 50px; */
 }
+
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -62,7 +66,6 @@ p {
     border-top: 2px solid goldenrod;
     margin-top: 50px;
     padding: 50px 0;
-
 }
 
 .grid-view {
@@ -76,15 +79,18 @@ p {
     margin-bottom: 50px;
     font-size: 3.5em;
     font-family: Lobster;
-
 }
-.grid-text{
-    width:100%;
+
+.grid-text {
+    width: 100%;
     min-height: 400px;
 }
-.grid-text,.icon {
+
+.grid-text,
+.icon {
     padding: 12px;
 }
+
 .grid-text>div {
     margin: 5%;
 }
@@ -100,6 +106,7 @@ p {
     font-size: 2em;
     text-align: left;
 }
+
 .icon div {
     /* box-shadow: 0 0 15px -5px rgba(0,0,0,0.32); */
     background: rgb(245, 244, 244);
@@ -112,10 +119,13 @@ p {
     height: 50px;
     width: 50px;
 }
-.wrapper,.grid-image{
+
+.wrapper,
+.grid-image {
     display: flex;
     align-items: center;
 }
+
 .grid-image {
     padding: 12px;
 }
@@ -130,82 +140,114 @@ p {
 }
 
 #page-container {
-    /* border: 2px solid red; */
     display: grid;
     margin: 50px 5%;
-    padding-top: 50px;
-    border-top: 2px solid goldenrod; 
+    margin-bottom: 0;
+    padding-top: 0;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 5%;
-    /* min-height: 500px; */
 }
 
 #fb-page12 {
     max-width: 500px;
-    margin: auto;
-    /* margin-left: calc(100vw - 600px); */
-    /* border: 2px solid goldenrod; */
     width: 40vw;
-    padding:50px 0 0 0;
+    margin: auto;
+    border: 2px solid goldenrod;
+
 }
-#form-wrapper{
-    /* margin-top: 50px; */
-    padding:50px 0;
+#social-block{
+    border: 2px outset grey;
+    margin: 0 2%;
+}
+#form-wrapper {
+    padding: 50px 0;
     border-top: 2px solid goldenrod;
-    background: linear-gradient(45deg,rgba(255, 129, 12, 0.712),rgba(253, 96, 82, 0.801));
+    background: linear-gradient(45deg, rgba(255, 129, 12, 0.712), rgba(253, 96, 82, 0.801));
 }
+
 #form-container {
     /* border: 2px solid green; */
     min-height: 200px;
     width: fit-content;
     margin: auto;
     padding: 12px;
-    /* margin-bottom: 50px; */
 }
-form{
+
+form {
     width: fit-content;
-    margin:auto;
+    margin: auto;
 }
-form >div{
-    padding :5% 0;
+
+form>div {
+    padding: 5% 0;
 }
-form input{
-    padding:5%;
+
+form input {
+    padding: 5%;
     width: 100%;
 }
-textarea{
+
+textarea {
     width: 100%;
     padding: 5%;
 }
-#query-line{
+
+#query-line {
     border-bottom: 2px solid black;
 }
-form button{
-    border:none;
-    padding:12px;
+
+form button {
+    border: none;
+    padding: 12px;
     margin: 0 12px;
-    color :white;
-    background-color:black;
+    color: white;
+    background-color: black;
 }
-#button-setter{
+
+#button-setter {
     font-family: Lato;
     width: fit-content;
     margin: auto;
     border: 3px groove turquoise;
 }
-#button-setter:hover{
-    transform: rotate(-5deg);  
+
+#button-setter:hover {
+    transform: rotate(-5deg);
 }
+
 .some-headings {
     text-align: center;
     font: 700 32px Lobster;
     padding: 30px 5%;
+    /* border-top: 2px solid goldenrod; */
 }
-.alter-grid .grid-image{
+
+.alter-grid .grid-image {
     grid-area: second;
 }
-.alter-grid .grid-text{
+
+.alter-grid .grid-text {
     grid-area: first;
+}
+
+#insta-container iframe {
+    margin: auto;
+    /* see the details inside the iframe */
+}
+
+#youtube-box {
+    margin: 100px 0;
+}
+
+#youtube-player {
+    height: 80vh;
+    width: 90%;
+    margin: auto;
+}
+
+#youtube-player iframe {
+    width: 100%;
+    height: inherit;
 }
 
 @media screen and (min-width: 700px) {
@@ -223,17 +265,21 @@ form button{
     }
 
     #fb-page12 {
-        width:80vw;
+        width: 90vw;
+        margin-top: 10vh;
     }
-    #page-container{
+
+    #page-container {
         grid-template-columns: 1fr;
     }
-    .some-headings{
-        margin-top:50px;
+
+    .some-headings {
+        margin-top: 50px;
     }
-    .wrapper{
+
+    .wrapper {
         grid-template-columns: 1fr;
         grid-template-areas: "first"
-                            "second";
+            "second";
     }
 }

@@ -26,7 +26,7 @@ nav{
 .nav-item{
     margin: 12px !important;
     position: relative;
-    
+    font-style: italic;
 }
 .nav-link:before{
   content: "";

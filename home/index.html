@@ -62,12 +62,19 @@
     </div>
   </nav>
   <main>
+    <!-- 
+    //////////////////
+      carousel-start
+    //////////////////
+    -->
     <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -78,16 +85,30 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="../team images/IMG-20190710-WA0008.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="../team images/_DSC0460.JPG" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../team images/9 (1).JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>four slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../team images/DSC_1575.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>five slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
           </div>
@@ -102,31 +123,46 @@
         </a>
       </div>
     </div>
-    <section id="main_image">
+    <!-- 
+    //////////////////
+      carousel-end
+    //////////////////
+    -->
+
+    <!-- <section id="main_image">
       <div data-aos="fade-up">
         <div id="header_text">
           <p><span>Z</span>HCET</p>
           <p><span>F</span>ormula <span>R</span>acing</p>
         </div>
       </div>
-    </section>
+    </section> -->
+
     <section>
+      <div class="some-headings">About ZFR</div>
+      <div class="about-text">ZHCET FORMULA RACING is a formula racing team of 40 quite hard working and
+        passionate undergraduate engineering students from Aligarh Muslim University who ideate, design, fabricate
+        and test a formula style race car and participate in various National as well as International formula
+        student competitions.</div>
+    </section>
+
+    <section id="social-block">
+      <div>
+        <div class="some-headings">Social media updates</div>
+      </div>
       <div id="page-container">
         <div class="first" data-aos="fade-up" data-aos-duration="2000">
           <div>
-            <div class="some-headings">About ZFR</div>
-            <div class="about-text">ZHCET FORMULA RACING is a formula racing team of 40 quite hard working and
-              passionate undergraduate engineering students from Aligarh Muslim University who ideate, design, fabricate
-              and test a formula style race car and participate in various National as well as International formula
-              student competitions.</div>
+            <div id="insta-container">
+              <!-- LightWidget WIDGET -->
+              <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> -->
+              <iframe src="//lightwidget.com/widgets/a783dbf4dca95e0ea5eec31e206ec03f.html" allowtransparency="true"
+                class="lightwidget-widget" style="width:100%;height:500px;border:0;overflow:hidden;"></iframe>
+            </div>
           </div>
         </div>
         <div class="second" data-aos="fade-up" data-aos-duration="2000">
-          <div>
-            <div class="some-headings">Fb updates</div>
-          </div>
           <div id="fb-page12">
-
             <div class="fb-page" data-href="https://www.facebook.com/ZHCETFormulaRacing/" data-tabs="timeline"
               data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true"
               data-hide-cover="false" data-show-facepile="true">
@@ -136,35 +172,19 @@
           </div>
         </div>
       </div>
+      <div id="youtube-box">
+        <div id="youtube-player">
+          <iframe src="https://www.youtube.com/embed/W5RN0ypYg2c" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
+
+
     <section class="grid-view">
       <div class="parts">
         <section class="wrapper">
-          <div class="grid-text" data-aos="fade-up">
-            <div class="icon">
-              <div>
-                <img src="../icons/racing-car.png" alt="icon">
-              </div>
-            </div>
-            <div class="heading-text">Our Cars</div>
-            <div class="body-text">Till now our club has made 4 cars out of which ZFR4.0 is latest and we are working on
-              ZFR5.0
-            </div>
-            <div class="link">
-              <a href="#"><span>See All..</span></a>
-            </div>
-          </div>
-          <div class="grid-image">
-            <div class="image-container">
-              <img src="../images/real.jpeg" alt="car">
-            </div>
-          </div>
-        </section>
-        <section class="wrapper alter-grid">
-          <div class="grid-image">
-            <div class="image-container"><img src="../images/formulastudent.jpg" alt="car">
-            </div>
-          </div>
+
           <div class="grid-text">
             <div class="icon">
               <div>
@@ -180,8 +200,35 @@
               <a href="#"><span> Know more...</span></a>
             </div>
           </div>
+          <div class="grid-image">
+            <div class="image-container"><img src="../images/formulastudent.jpg" alt="car">
+            </div>
+          </div>
 
         </section>
+        <section class="wrapper alter-grid">
+          <div class="grid-image">
+            <div class="image-container">
+              <img src="../images/real.jpeg" alt="car">
+            </div>
+          </div>
+          <div class="grid-text" data-aos="fade-up">
+            <div class="icon">
+              <div>
+                <img src="../icons/racing-car.png" alt="icon">
+              </div>
+            </div>
+            <div class="heading-text">Our Cars</div>
+            <div class="body-text">Till now our club has made 4 cars out of which ZFR4.0 is latest and we are working on
+              ZFR5.0
+            </div>
+            <div class="link">
+              <a href="#"><span>See All..</span></a>
+            </div>
+          </div>
+
+        </section>
+
         <section class="wrapper">
           <div class="grid-text">
             <div class="icon">
@@ -231,7 +278,7 @@
 
       </div>
     </section>
-    <!-- facebook page end -->
+
   </main>
   <!-- Footer -->
   <footer class="page-footer font-small stylish-color-dark pt-4">
