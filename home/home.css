@@ -58,10 +58,10 @@
 
 
 .about-text {
-    padding: 50px;
-    font-size: 22px;
+    padding: 5%;
+    font-size: 1.3em;
     text-align: justify;
-    line-height: 2.5rem;
+    line-height: 2.5em;
     width: 80%;
     margin: auto;
     min-width: 300px;
