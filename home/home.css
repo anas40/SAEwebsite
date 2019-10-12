@@ -193,9 +193,13 @@ article{
 }
 
 #form-wrapper {
+    overflow: hidden;
     padding: 50px 0;
     border-top: 2px solid goldenrod;
     background: linear-gradient(45deg, rgba(255, 129, 12, 0.712), rgba(253, 96, 82, 0.801));
+}
+#form-wrapper:hover #query-line {
+    transform: translateY(-10px) scale(1.4);
 }
 
 #form-container {
@@ -227,6 +231,7 @@ textarea {
 
 #query-line {
     border-bottom: 2px solid black;
+    transition: transform 300ms;
 }
 
 form button {

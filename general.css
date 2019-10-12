@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Muli:900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
 
 
@@ -66,7 +66,7 @@ nav {
 }
 
 #car-icon {
-    height: 35px;
+    height: 26px;
     padding: 0 4px;
     color: white;
 }
@@ -106,9 +106,9 @@ body {
 
 #navbarNav li {
     margin: -8px 16px;
-    font-size: 22px;
-    font-family: Muli;
-    /* font-weight: 900 !important; */
+    font-size: 18px;
+    font-family: Roboto;
+    font-weight: 500;
 }
 
 footer {
@@ -163,6 +163,6 @@ footer a {
         top: inherit;
     }
     .nav-link {
-        margin: 12px;
+        /* margin: 12px; */
     }
 }
