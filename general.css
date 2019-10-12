@@ -112,6 +112,7 @@ body {
 }
 
 footer {
+   
     margin-bottom: 0;
     background-color: #343a40;
     color: white;
@@ -126,7 +127,7 @@ footer a {
     right: 80px;
 }
 
-.container {
+#contain {
     margin: 0;
     padding: 0;
 }
@@ -146,12 +147,21 @@ footer a {
     box-shadow: 0 0 20px -2px rgb(26, 26, 26);
     transform: scale(1.05);
 }
+.navbar-toggler{
+    position: absolute;
+    right: 10px;
+    top:10px;
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     #donation {
         position: static !important;
     }
-
+    #amu-logo{
+        margin-right: 50%;
+        left: 46%;
+        top: inherit;
+    }
     .nav-link {
         margin: 12px;
     }
