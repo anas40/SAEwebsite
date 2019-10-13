@@ -11,6 +11,7 @@ body{
     padding:2%;
     margin-top:3%;
     font-family: "Aldrich";
+    font-weight:bold;
 }
 .fst-blog{
     margin:relative;
@@ -19,9 +20,11 @@ body{
 }
 .fst-blog ,.fst-blog a{
     color:white;
+    font-weight:90%
 }
 .col-md-4 p{
     color:white;
+    font-weight:50%;
     font-family:"Times New Roman", Times, serif;
     font-size:120%;
 }
@@ -35,6 +38,7 @@ body{
 .static-events h4,.dynamic-events h4{
     text-align: center;
     color: white;
+    font-weight:bold;
 }
 .dynamic-events .col-md-4, .static-events .col-md-4{
     margin-bottom:2%;
@@ -44,6 +48,7 @@ body{
     font-family: "Aldrich";
     color:white;
     margin-bottom:5%;
+    font-weight:bold;
 
 }
 #header-text div {
