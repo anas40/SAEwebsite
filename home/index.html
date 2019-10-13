@@ -10,11 +10,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
     integrity="sha256-GqiEX9BuR1rv5zPU5Vs2qS/NSHl1BJyBcjQYJ6ycwD4=" crossorigin="anonymous" />
   <link rel="stylesheet" href="home.css">
-  <link rel="stylesheet" href="../general.css">
+  <link rel="stylesheet" href="/general.css">
   <script defer src="https://friconix.com/cdn/friconix.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
     integrity="sha256-pQBbLkFHcP1cy0C8IhoSdxlm0CtcH5yJ2ki9jjgR03c=" crossorigin="anonymous"></script>
-  <!-- <script src="https://kit.fontawesome.com/ad97df046f.js"></script> -->
+  <script src="/templating.js"></script>
 </head>
 
 <body>
@@ -24,50 +24,22 @@
   </script>
   <!-- facebook page integration end -->
 
-  <nav class="navbar navbar-expand-lg">
-    <div class="container container-nav">
-      <a class="navbar-brand" href="index.html">
-        <img src="../stickr.png" alt="logo" id="logo">
-      </a>
-      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon "></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="../home/index.html"><i class="fi-xnsuxl-house-solid"></i><span>H</span>ome </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../cars/index.html"><img src="../icons/imageedit_5_8543309129.png" id="car-icon"
-                alt=""><span>C</span>ars </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="../team/index.html"><i class="fi-xnsuxl-team-solid"></i><span>C</span>rew</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link " href="../fs/index.html"><i class="fi-xwllxl-star-half-wide"></i><span>F</span>ormula
-              Student</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link " href="../about us/index.html"><i class="fi-xnsuxl-friend"></i>About Us</a>
-          </li> -->
-          <li class="nav-item " id="donation">
-            <a class="nav-link " href="../donation/index.html"><i class="fi-xnsuxl-rupee"></i><span>S</span>upport
-              Us</a>
-          </li>
+  <nav include-html="../template/nav.html" class="navbar navbar-expand-lg" id="navbar"></nav>
 
-        </ul>
-      </div>
-    </div>
-  </nav>
   <main>
-    <div class="bd-example">
+    <!-- 
+    //////////////////
+      carousel-start
+    //////////////////
+    -->
+    <!-- <div class="bd-example">
       <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
           <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
@@ -78,16 +50,30 @@
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="../team images/IMG-20190710-WA0008.jpg" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </div>
           </div>
           <div class="carousel-item">
-            <img src="..." class="d-block w-100" alt="...">
+            <img src="../team images/_DSC0460.JPG" class="d-block w-100" alt="...">
             <div class="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../team images/9 (1).JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>four slide label</h5>
+              <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="../team images/DSC_1575.JPG" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>five slide label</h5>
               <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
             </div>
           </div>
@@ -101,32 +87,57 @@
           <span class="sr-only">Next</span>
         </a>
       </div>
+    </div> 
+  -->
+    <!-- 
+    //////////////////
+      carousel-end
+    //////////////////
+    -->
+
+    <div id="wrapper">
+      <div id="featured">
+        <iframe id="myVideo"
+          src="https://www.youtube.com/embed/QF_xnP4PUeg?autoplay=1&mute=1&controls=0&disablekb=1&fs=0&loop=1&start=40&showinfo=0&rel=0&modestbranding=0$iv_load_policy=3"
+          frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
     </div>
+
     <section id="main_image">
-      <div data-aos="fade-up">
+      <div>
         <div id="header_text">
           <p><span>Z</span>HCET</p>
           <p><span>F</span>ormula <span>R</span>acing</p>
         </div>
       </div>
     </section>
+
     <section>
+      <div class="some-headings">About ZFR</div>
+      <article class="about-text">ZHCET FORMULA RACING is a formula racing team of 40 quite hard working and
+        passionate undergraduate engineering students from Aligarh Muslim University who ideate, design, fabricate
+        and test a formula style race car and participate in various National as well as International formula
+        student competitions.</article>
+    </section>
+
+    <section id="social-block">
+      <div>
+        <div class="some-headings">Social media updates</div>
+      </div>
       <div id="page-container">
         <div class="first" data-aos="fade-up" data-aos-duration="2000">
           <div>
-            <div class="some-headings">About ZFR</div>
-            <div class="about-text">ZHCET FORMULA RACING is a formula racing team of 40 quite hard working and
-              passionate undergraduate engineering students from Aligarh Muslim University who ideate, design, fabricate
-              and test a formula style race car and participate in various National as well as International formula
-              student competitions.</div>
+            <div id="insta-container">
+              <!-- LightWidget WIDGET -->
+              <!-- <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script> -->
+              <iframe src="//lightwidget.com/widgets/a783dbf4dca95e0ea5eec31e206ec03f.html" allowtransparency="true"
+                class="lightwidget-widget" style="width:100%;height:500px;border:0;overflow:hidden;"></iframe>
+            </div>
           </div>
         </div>
         <div class="second" data-aos="fade-up" data-aos-duration="2000">
-          <div>
-            <div class="some-headings">Fb updates</div>
-          </div>
           <div id="fb-page12">
-
             <div class="fb-page" data-href="https://www.facebook.com/ZHCETFormulaRacing/" data-tabs="timeline"
               data-width="500" data-height="500" data-small-header="false" data-adapt-container-width="true"
               data-hide-cover="false" data-show-facepile="true">
@@ -136,14 +147,51 @@
           </div>
         </div>
       </div>
+      <div id="youtube-box">
+        <div id="youtube-player">
+          <iframe src="https://www.youtube.com/embed/q6yPVslIujk?loop=1&rel=0&modestbranding=0$iv_load_policy=3"
+            frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </div>
     </section>
+
+
     <section class="grid-view">
       <div class="parts">
         <section class="wrapper">
+
+          <div class="grid-text">
+            <div class="icon">
+              <div>
+                <img src="/icons/racing-flag.png" alt="icon">
+              </div>
+            </div>
+            <div class="heading-text">Formula Student</div>
+            <article class="body-text">Being one of the most prestigious design competitions round the globe, formula
+              student is a global showdown which challenges the university undergraduates to combine hands on practical
+              appliances along with project management skills. In India, we participate in FORMULA BHARAT, SAE SUPRA and
+              Imperial to test ourselves against the teams of other prestigious universities of India.</article>
+            <div class="link">
+              <a href="#"><span> Know more...</span></a>
+            </div>
+          </div>
+          <div class="grid-image">
+            <div class="image-container"><img src="/images/formulastudent.jpg" alt="car">
+            </div>
+          </div>
+
+        </section>
+        <section class="wrapper alter-grid">
+          <div class="grid-image">
+            <div class="image-container">
+              <img src="/images/real.jpeg" alt="car">
+            </div>
+          </div>
           <div class="grid-text" data-aos="fade-up">
             <div class="icon">
               <div>
-                <img src="../icons/racing-car.png" alt="icon">
+                <img src="/icons/racing-car.png" alt="icon">
               </div>
             </div>
             <div class="heading-text">Our Cars</div>
@@ -154,39 +202,14 @@
               <a href="#"><span>See All..</span></a>
             </div>
           </div>
-          <div class="grid-image">
-            <div class="image-container">
-              <img src="../images/real.jpeg" alt="car">
-            </div>
-          </div>
-        </section>
-        <section class="wrapper alter-grid">
-          <div class="grid-image">
-            <div class="image-container"><img src="../images/formulastudent.jpg" alt="car">
-            </div>
-          </div>
-          <div class="grid-text">
-            <div class="icon">
-              <div>
-                <img src="../icons/racing-flag.png" alt="icon">
-              </div>
-            </div>
-            <div class="heading-text">Formula Student</div>
-            <div class="body-text">Being one of the most prestigious design competitions round the globe, formula
-              student is a global showdown which challenges the university undergraduates to combine hands on practical
-              appliances along with project management skills. In India, we participate in FORMULA BHARAT, SAE SUPRA and
-              Imperial to test ourselves against the teams of other prestigious universities of India.</div>
-            <div class="link">
-              <a href="#"><span> Know more...</span></a>
-            </div>
-          </div>
 
         </section>
+
         <section class="wrapper">
           <div class="grid-text">
             <div class="icon">
               <div>
-                <img src="../icons/mechanic (1).png" alt="icon">
+                <img src="/icons/mechanic (1).png" alt="icon">
               </div>
             </div>
             <div class="heading-text">Our Crew</div>
@@ -197,7 +220,7 @@
             </div>
           </div>
           <div class="grid-image">
-            <div class="image-container"><img src="../images/real.jpeg" alt="car">
+            <div class="image-container"><img src="/images/real.jpeg" alt="car">
             </div>
           </div>
         </section>
@@ -231,142 +254,10 @@
 
       </div>
     </section>
-    <!-- facebook page end -->
+
   </main>
   <!-- Footer -->
-  <footer class="page-footer font-small stylish-color-dark pt-4">
-
-    <!-- Footer Links -->
-    <div class="container text-center text-md-left">
-
-      <!-- Grid row -->
-      <div class="row">
-
-        <!-- Grid column -->
-        <div class="col-md-4 mx-auto">
-
-          <!-- Content -->
-          <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              Email : <a href="mailto:zhcetformularacing@gmail.com">zhcetformularacing@gmail.com</a>
-            </li>
-            <br>
-            <li>
-              Phone No. : <a href="tel:+919876543210">+91 9876543210</a>
-            </li>
-            <br>
-            <li>
-              <address>Address :<br> SAE zhcet,AMU,Aligarh,Uttar Pradesh,India</address>
-            </li>
-          </ul>
-
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Link 1</a>
-            </li>
-            <li>
-              <a href="#!">Link 2</a>
-            </li>
-            <li>
-              <a href="#!">Link 3</a>
-            </li>
-            <li>
-              <a href="#!">Link 4</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-
-        <hr class="clearfix w-100 d-md-none">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mx-auto">
-
-          <!-- Links -->
-          <h5 class="font-weight-bold mt-3 mb-4">Cars</h5>
-
-          <ul class="list-unstyled">
-            <li>
-              <a href="#!">Zfr4.0</a>
-            </li>
-            <li>
-              <a href="#!">Zfr3.0</a>
-            </li>
-            <li>
-              <a href="#!">Zfr2.0</a>
-            </li>
-            <li>
-              <a href="#!">Zfr1.0</a>
-            </li>
-          </ul>
-
-        </div>
-        <!-- Grid column -->
-        <!-- Grid row -->
-
-      </div>
-      <!-- Footer Links -->
-
-      <hr>
-
-      <!-- Call to action -->
-      <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-          <h5 class="mb-1">Support Us</h5>
-        </li>
-        <li class="list-inline-item">
-          <a href="#!" class="btn btn-danger btn-rounded">Donate here!</a>
-        </li>
-      </ul>
-      <!-- Call to action -->
-
-      <hr>
-
-      <!-- Social buttons -->
-      <ul class="list-unstyled list-inline text-center" id="social-buttons">
-        <li class="list-inline-item">
-          <a href="#" class="btn-floating btn-fb mx-1">
-            <img src="../icons/fb.png" alt="fb link">
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#" class="btn-floating btn-tw mx-1">
-            <img src="../icons/twitter.png" alt="twitter link">
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#" class="btn-floating btn-li mx-1">
-            <img src="../icons/linkedin.png" alt="linkedin link">
-          </a>
-        </li>
-        <li class="list-inline-item">
-          <a href="#" class="btn-floating btn-instagram mx-1">
-            <img src="../icons/insta2.png" alt="insta link">
-          </a>
-        </li>
-      </ul>
-      <!-- Social buttons -->
-
-      <!-- developer -->
-      <div class="footer-copyright text-center py-3" id="developer">Developed by
-        <a href="https://mdbootstrap.com/education/bootstrap/"> Mohd Anas,Gauhar Ayub Khan & Hammad Basit</a>
-      </div>
-      <!-- developer -->
+  <footer include-html="/template/footer.html" class="page-footer font-small stylish-color-dark pt-4">
 
   </footer>
   <!-- Footer end-->
@@ -378,6 +269,9 @@
   </script>
   <script>
     AOS.init();
+  </script>
+  <script>
+    includeHTML();
   </script>
 </body>
 
