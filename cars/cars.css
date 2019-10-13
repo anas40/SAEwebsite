@@ -29,6 +29,7 @@ body{
 }
 .image-box{
     text-align: center;
+    border: 2px ridge goldenrod;
 }
 .image-box img{
     border-radius:50%;
