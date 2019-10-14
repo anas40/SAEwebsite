@@ -124,10 +124,10 @@ p {
 }
 
 .grid-text>div {
-    margin: 5%;
+    margin: 3%;
 }
 article{
-    margin: 5%;
+    margin: 3%;
 }
 .grid-text .body-text {
     text-align: justify;
@@ -137,7 +137,7 @@ article{
 
 .grid-text .link {
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.4em;
     text-align: left;
 }
 
@@ -165,7 +165,7 @@ article{
 }
 
 .grid-image .image-container img {
-    height: 376px;
+    height: 30%;
     border-radius: 12px;
     box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.32);
     width: 100%;
@@ -308,9 +308,9 @@ form button {
     }
 
     #fb-page12 {
-        width: 90vw;
-        margin-top: 10vh;
+        width: 90vw;        
         margin: auto;
+        margin-top: 10vh;
     }
 
     #page-container {
