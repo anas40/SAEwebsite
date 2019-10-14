@@ -29,28 +29,29 @@ body{
 }
 .image-box{
     text-align: center;
-    border: 2px ridge goldenrod;
 }
 .image-box img{
     border-radius:50%;
     width:50%;
-    height: 20vh;
+    height:48vh;
+}
+.spec img{
+    height:60vh;
 }
 .row .col-md-6{
-    padding:2%;
+    padding:1%;
     margin-bottom:5%;
 }
 .sponsor .col-md-6{
     margin-bottom:0px;
     height:56vh;
+    padding:2%;
 }
-
 .name{
     text-align: center;
     color:purple;
     margin-top:1.5%;
 }
-
 .name h1{
     text-decoration: none;
     color:purple;
@@ -92,7 +93,6 @@ body{
 .team_mem .row{
     margin-bottom:3%;
 }
-
 .team_mem{
     margin-top:5%;
     text-align:left;
