@@ -36,7 +36,8 @@ body{
     height:48vh;
 }
 .spec img{
-    height:60vh;
+    height:63vh;
+    width:56%;
 }
 .row .col-md-6{
     padding:1%;
@@ -51,6 +52,7 @@ body{
     text-align: center;
     color:purple;
     margin-top:1.5%;
+    margin-bottom: 5%;
 }
 .name h1{
     text-decoration: none;
