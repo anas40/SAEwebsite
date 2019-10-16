@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Roboto|Mali&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
 
 
@@ -79,6 +79,7 @@ nav {
 #amu-logo {
     position: absolute;
     right: 12px;
+    cursor: pointer;
 }
 
 #amu-logo img {
@@ -108,7 +109,7 @@ body {
     margin: -8px 16px;
     font-size: 18px;
     font-family: Roboto;
-    font-weight: 500;
+    font-weight: 600;
 }
 
 footer {
@@ -161,8 +162,5 @@ footer a {
         margin-right: 50%;
         left: 46%;
         top: inherit;
-    }
-    .nav-link {
-        /* margin: 12px; */
     }
 }

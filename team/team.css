@@ -105,14 +105,14 @@ main >div{
     /* box-shadow: 0 0 5px 0 black; */
 }
 .perse-des,.perse-des-small{
-    color: #330926;
+    color: rgb(18, 62, 98);
     font-family: Ubuntu;
 }
 .perse-des h2,.perse-des-small h2{
     padding: 1%;
     font-weight: 700;
     border-bottom: 4px ridge black;
-    color: #330926;
+    color: #000;
 }
 .perse-des h2{
     font-size: 1.8rem;
@@ -129,8 +129,9 @@ main >div{
 .department-heading > div{
     padding: 1% 10%;
     color: white;
-    font-weight:1000;
-    font-family: Cinzel;
+    font-weight:800;
+    font-family: Roboto;
+    text-shadow: #000 4px 3px 3px;
     /* text-decoration: underline white; */
     margin: auto;
     width: 80%;
@@ -152,7 +153,7 @@ main >div{
 
 #zfr5 > div{
     width: 95%;
-    background: linear-gradient(0deg, #1f171c,rgb(87, 40, 40),#1f171c );
+    background: linear-gradient(45deg, #1f171c,rgb(87, 40, 40),#1f171c );
 }
 @media screen and (max-width:991px){
     #zfr5{
