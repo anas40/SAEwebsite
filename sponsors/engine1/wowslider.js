@@ -235,7 +235,7 @@ jQuery.fn.wowSlider = function (am) {
     })
   });
   aI(aW).bind("effectEnd", function (c, f) {
-    h(x).stop(true, true).hide();
+    h(x).stop(true, true).show();
     setTimeout(function () {
       ap(x, function () {
         aC--;
