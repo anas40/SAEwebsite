@@ -1,5 +1,6 @@
 .sponsor-container{
     margin: auto;
     margin-top: 80px;
-    padding: 10px;
+    padding: 8% 10px;
+    min-height: 90vh;
 }
