@@ -86,12 +86,16 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd;
 }
+.head-td{
+    font-weight: bold;
+}
 body{
     overflow-x: hidden;
 }
 .desig{
     font-weight: bold;
 }
+
 .team_mem .row{
     margin-bottom:3%;
 }
@@ -136,6 +140,20 @@ body{
         font-size: 8vw;
         cursor:default;
     }
+    
+}
+@media (max-width:500px){
+    .spec img{
+        height:57vh;
+        width:80%;
+    }
+    .text-block h1{
+        font-size: 11vw;
+    }
+    body{
+        top:55px;
+        position:relative;
+    }
 }
 @media (min-width:500px) and (max-width:768px){
     .text-block h1{
@@ -143,4 +161,5 @@ body{
         font-size: 9vw;
         cursor:default;
     }
+    
 }
