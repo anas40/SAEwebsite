@@ -2,23 +2,59 @@
     position: relative;
     top: 68px;
 } */
-#main-image {
-    background-image: url(../images/WhatsApp\ Image\ 2019-09-19\ at\ 22.57.16\ \(1\).jpeg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+body{
+    background:linear-gradient(rgba(10, 10, 10, 0.5), rgba(8, 8, 8, 0.5)), url("../images/imageedit_2_7458214510.jpg") no-repeat center center;
+    background-size: cover;
 }
-
-#header-text {
-    background: rgba(0, 0, 0, 0.6);
+#formula_head{
+    text-align:center;
+    padding:2%;
+    margin-top:3%;
+    font-family: "Aldrich";
+    font-weight:bold;
+}
+.fst-blog{
+    margin:relative;
+    margin-top:16vh;
+    margin-bottom:7%;
+}
+.fst-blog ,.fst-blog a{
+    color:white;
+    font-weight:90%
+}
+.col-md-4 p{
+    color:white;
+    font-weight:50%;
+    font-family:"Times New Roman", Times, serif;
+    font-size:120%;
+}
+.blog-text{
+    font-family: "Times New Roman", Times, serif;
+    font-size: 130%;
+}
+.static-events{
+    margin-bottom:3%
+}
+.static-events h4,.dynamic-events h4{
+    text-align: center;
     color: white;
-    font-size: 8vw;
-    font-family: Algerian;
-    font-weight: 800;
-    height: 100vh;
-    padding-top: 40vh;
+    font-weight:bold;
 }
+.dynamic-events .col-md-4, .static-events .col-md-4{
+    margin-bottom:2%;
+}
+.static-events h2, .dynamic-events h2{
+    text-align:center;
+    font-family: "Aldrich";
+    color:white;
+    margin-bottom:5%;
+    font-weight:bold;
 
+}
 #header-text div {
+    color:white;
+    font-size:8vw;
+    font-weight:800;
     margin: auto;
     width: fit-content;
     text-align: center;

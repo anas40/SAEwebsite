@@ -1,22 +1,36 @@
 body{
-    background-image: url("../images/background/gear-2291916_1920.jpg");
-    /* background-size: 100vw 100vh; */
+    background-image: url("../images/background/ABB-Formula-E-Michelin-a-presente-le-nouveau-MICHELIN-Pilot-Sport.jpg");
+    background-size: 100vw 100vh;
     background-attachment: fixed;
 }
 main{
     /* background: linear-gradient(90deg,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.692),rgba(255, 255, 255, 0)); */
     position: relative;
     top: 70px;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
 }
-
+main >div{
+    border: 5px white ridge;
+    margin: 5% 2%;
+}
+#zfr5{
+    position: relative;
+    top: -70px;
+}
+#top-member{
+    margin-top:0;
+    padding-top: 0;
+}
 .firsttier{
-    margin: 50px 0;
+    margin: 30px 0;
+    padding: 30px;
     /* border: 2px solid green; */
 }
 .firsttier > div{
     width: fit-content;
-    min-width: 300px;
-    max-width: 400px;
+    min-width: 250px;
+    max-width: 300px;
     margin: auto;
     transition: transform 300ms;
 }
@@ -38,25 +52,24 @@ main{
 }
 .member-image img{
     margin-top: 12px;
-    width: 80%;
+    width: 60%;
     border-radius:50%;
     box-shadow: 0 0 12px 0px rgb(0, 0, 0); 
 }
 
 .second-tier{
-    margin: 100px 0;
+    margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     align-content: space-around;
-    
 }
 .second-tier > div{
-    margin: 50px 0;
+    margin: 50px 15px;
     flex-basis: 40% !important;
-    min-width: 200px;
-    max-width: 300px;
+    min-width: 230px;
+    max-width: 260px;
     transition: transform 300ms; 
 }
 .second-tier > div:hover,.firsttier >div:hover{
@@ -92,24 +105,33 @@ main{
     /* box-shadow: 0 0 5px 0 black; */
 }
 .perse-des,.perse-des-small{
-    color: #330926;
+    color: rgb(18, 62, 98);
     font-family: Ubuntu;
 }
 .perse-des h2,.perse-des-small h2{
     padding: 1%;
-    font-size: 2.7rem;
     font-weight: 700;
     border-bottom: 4px ridge black;
-    color: #330926;
+    color: #000;
+}
+.perse-des h2{
+    font-size: 1.8rem;
+}
+.perse-des h4{
+    font-size: 1.4rem;
 }
 .perse-des-small h2{
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+}
+.perse-des-small h4{
+    font-size: 1.1rem;
 }
 .department-heading > div{
     padding: 1% 10%;
     color: white;
-    font-weight:1000;
-    font-family: Cinzel;
+    font-weight:800;
+    font-family: Roboto;
+    text-shadow: #000 4px 3px 3px;
     /* text-decoration: underline white; */
     margin: auto;
     width: 80%;
@@ -121,11 +143,35 @@ main{
     margin: auto;
     width: fit-content;
 }
+
+.department-heading-box h1{
+    text-align: center;
+}
 #zfr5{
     margin-top: 30px;
 }
 
 #zfr5 > div{
     width: 95%;
-    background: linear-gradient(0deg, #1f171c,rgb(141, 129, 129),#1f171c );
+    background: linear-gradient(45deg, #1f171c,rgb(87, 40, 40),#1f171c );
+}
+@media screen and (max-width:991px){
+    #zfr5{
+        top:-60px;
+    }
+    .department-heading-box h1{
+        font-size: 1.5rem;
+    }
+    .perse-des h2{
+        font-size: 1.6rem; 
+    }
+    .second-tier{
+        margin: 8% 0;
+    }
+    .firsttier{
+        margin: 4% 0;
+    }
+    .perse-des h4{
+        font-size: 1.2rem;
+    }
 }

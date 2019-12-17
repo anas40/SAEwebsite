@@ -11,309 +11,852 @@
     <link rel="stylesheet" href="../general.css">
     <script defer src="https://friconix.com/cdn/friconix.js"></script>
     <!-- <script src="https://kit.fontawesome.com/ad97df046f.js"></script> -->
+    <script src="../templating.js"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container container-nav">
-            <a class="navbar-brand" href="index.html">
-                <img src="../stickr.png" alt="logo" id="logo">
-            </a>
-            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../home/index.html"><i
-                                class="fi-xnsuxl-house-solid"></i><span>H</span>ome </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../cars/index.html"><img src="../icons/imageedit_5_8543309129.png"
-                                id="car-icon" alt=""><span>C</span>ars </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="../team/index.html"><i
-                                class="fi-xnsuxl-team-solid"></i><span>C</span>rew</a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="#"><i class="fi-xwllxl-star-half-wide"></i><span>F</span>ormula
-                            Student</a>
-                    </li>
-                    <!-- <li class="nav-item">
-            <a class="nav-link " href="../about us/index.html"><i class="fi-xnsuxl-friend"></i>About Us</a>
-          </li> -->
-                    <li class="nav-item " id="donation">
-                        <a class="nav-link " href="../donation/index.html"><i
-                                class="fi-xnsuxl-rupee"></i><span>S</span>upport
-                            Us</a>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
+    <nav include-html="../template/nav.html" class="navbar navbar-expand-lg" id="navbar">
     </nav>
     <main>
-        <div class="department-heading" id="zfr5">
-            <div>
-                <div class="department-heading-box">
-                    <h1>ZFR5.0</h1>
+        <div>
+            <div class="department-heading" id="zfr5">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>ZFR5.0</h1>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- chairperson -->
-        <section class="firsttier">
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/rishabh.JPG" alt="">
-                    </div>
+            <!-- chairperson -->
+            <section class="firsttier" id="top-member">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG-20191124-WA0025.jpg" alt="">
+                        </div>
 
-                    <div>
-                        <div class="perse-des">
-                            <h2>Captain</h2>
-                            <h4>Rishabh Bhai</h4>
-                        </div>
-                    </div>
-                    <div class="linksofmembers">
                         <div>
-                            <a href="#">
-                                <img src="../icons/email.png" alt=" email address">
-                            </a>
+                            <div class="perse-des">
+                                <h2>Captain</h2>
+                                <h4>Sarif Anwar</h4>
+                            </div>
                         </div>
-                        <div>
-                            <a href="#">
-                                <img src="../icons/insta2.png" alt="fb link">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../icons/linkedin.png" alt="mobile number">
-                            </a>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            </div>
-        </section>
-        <!-- vehicle dynamics -->
-        <div class="department-heading">
-            <div>
-                <div class="department-heading-box">
-                    <h1>Vehicle Dynamics</h1>
-                </div>
-            </div>
-        </div>
-        <!-- vehicle dynamics lead -->
-        <section class="firsttier">
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
+            </section>
 
-                    <div>
-                        <div class="perse-des">
-                            <h2>Vehicle Dynamics Lead</h2>
-                            <h4>Mohd Tashif</h4>
-                        </div>
-                    </div>
-                    <div class="linksofmembers">
-                        <div>
-                            <a href="#">
-                                <img src="../icons/email.png" alt=" email address">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../icons/insta2.png" alt="fb link">
-                            </a>
-                        </div>
-                        <div>
-                            <a href="#">
-                                <img src="../icons/linkedin.png" alt="mobile number">
-                            </a>
-                        </div>
+            <!-- vehicle dynamics -->
+            <div class="department-heading">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>Vehicle Dynamics</h1>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- vehicle dynamics members -->
-        <section class="second-tier">
-            <!-- first -->
-            <div>
+            <!-- vehicle dynamics lead -->
+            <section class="firsttier">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_201318.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des">
+                                <h2>Vehicle Dynamics Lead</h2>
+                                <h4>Mohd Tashif</h4>
+                            </div>
+                        </div>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- vehicle dynamics members -->
+            <section class="second-tier">
+                <!-- first -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG-20191124-WA0025.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Steering & Wheel Assembly</h2>
+                                <h4>Sarif Anwar</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- second -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/rehan.jpeg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Wheel Assembly</h2>
+                                <h4>Rehan Abad Siddiqui</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="mailto:zhcetformularacing@gmail.com" target="_blank">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.instagram.com/_abadrehan/" target="_blank">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="https://www.linkedin.com/in/rehan-abad-siddiqui-623868176/"
+                                        target="_blank">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200830.png" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Suspension</h2>
+                                <h4>Yogesh Kumar</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="second-tier">
+                <!-- fourth -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200951.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Suspension</h2>
+                                <h4>Aftab Alam</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fifth -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191126_235448.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Steering</h2>
+                                <h4>Hammad Qamar</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- sixth -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191130_011434.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Brakes</h2>
+                                <h4>Burhan Shamsi</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- seventh -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191130_010441.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Brakes</h2>
+                                <h4>Waris Khan</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- chassis -->
+            <div class="department-heading">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>Chassis</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- chassis lead -->
+            <section class="firsttier">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_201205.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des">
+                                <h2>Chassis Lead</h2>
+                                <h4>Qazi Mohd Taha</h4>
+                            </div>
+                        </div>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- chassis members -->
+            <section class="second-tier">
+                <!-- first -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191130_012057.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Md Ali Gauhar</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- second -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG-20191103-WA0007.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Varun Bhardwaj</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- third -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_201100.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Tazeem Khan</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- power train -->
+            <div class="department-heading">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>Power Train</h1>
+                    </div>
+                </div>
+            </div>
+
+            <!-- power train lead -->
+            <section class="firsttier">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200516.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des">
+                                <h2>Powertrain Lead</h2>
+                                <h4>Mohd Suboor Aziz</h4>
+                            </div>
+                        </div>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- power train members -->
+            <section class="second-tier">
+                <!-- first -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_195909.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Swarnima Chaudhary</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- second -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191126_235547.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Muhammad Aatif Qazi</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191127_001312.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Shubham Jain</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- electronics -->
+            <div class="department-heading">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>Electronics</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- electronics lead -->
+            <section class="firsttier">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200423.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des">
+                                <h2>Electronics Lead</h2>
+                                <h4>Mohit Mangal</h4>
+                            </div>
+                        </div>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- electronics members -->
+            <section class="second-tier">
+                <!-- first -->
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200003.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Hina Tomar</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191130_005234.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Syed Mehdi Kazim</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG-20191125-WA0001.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Asmer Hamid Ali</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_200046.jpg" alt="">
+                        </div>
+
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>Kunal Sharma</h4>
+                            </div>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+
+
+            <!-- tema manager -->
+
+            <div class="department-heading">
+                <div>
+                    <div class="department-heading-box">
+                        <h1>Team Manager</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- electronics lead -->
+            <section class="firsttier">
+                <div>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG_20191125_201205.jpg" alt="">
+                        </div>
+
+                        <div>
+                            <div class="perse-des">
+                                <h2>Team manager</h2>
+                                <h4>Qazi Mohammed Taha</h4>
+                            </div>
+                        </div>
+                        <div class="linksofmembers">
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/email.png" alt=" email address">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/insta2.png" alt="fb link">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <img src="../icons/linkedin.png" alt="mobile number">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="second-tier">
+                <div>
                 <div class="member">
                     <div class="member-image">
-                        <img src="../images/download.png" alt="">
+                        <img src="../team images/team-members/IMG_20191130_011434.jpg" alt="">
                     </div>
 
                     <div class="details">
                         <div class="perse-des-small">
-                            <h2>Steering & Wheel assembly</h2>
-                            <h4>Sarif Anwar</h4>
-                        </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- second -->
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div>
-                        <div class="perse-des-small">
-                            <h2>Wheel assembly</h2>
-                            <h4>Rehan Abad Siddiqui</h4>
-                        </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- third -->
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div>
-                        <div class="perse-des-small">
-                            <h2>Suspension</h2>
-                            <h4>Yogesh Kumar</h4>
-                        </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="second-tier">
-            <!-- fourth -->
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div class="details">
-                        <div class="perse-des-small">
-                            <h2>Wheel Assembly</h2>
-                            <h4>Hina Tomar</h4>
-                        </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- fifth -->
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div>
-                        <div class="perse-des-small">
-                            <h2>Steering</h2>
-                            <h4>Syed Murattib Hussain</h4>
-                        </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
-                            </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- sixth -->
-            <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div>
-                        <div class="perse-des-small">
-                            <h2>Brakes</h2>
+                            <h2>Member</h2>
                             <h4>Burhan Shamsi</h4>
                         </div>
                         <div class="linksofmembers">
@@ -333,180 +876,119 @@
                                 </a>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
-            <!-- seventh -->
+
             <div>
-                <div class="member">
-                    <div class="member-image">
-                        <img src="../images/download.png" alt="">
-                    </div>
-
-                    <div>
-                        <div class="perse-des-small">
-                            <h2>Brakes</h2>
-                            <h4>Waris Khan</h4>
+                    <div class="member">
+                        <div class="member-image">
+                            <img src="../team images/team-members/IMG-20191126-WA0019.jpg" alt="">
                         </div>
-                        <div class="linksofmembers">
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/email.png" alt=" email address">
-                                </a>
+    
+                        <div class="details">
+                            <div class="perse-des-small">
+                                <h2>Member</h2>
+                                <h4>S Meesum Raza Zaidi</h4>
                             </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/insta2.png" alt="fb link">
-                                </a>
+                            <div class="linksofmembers">
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/email.png" alt=" email address">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/insta2.png" alt="fb link">
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#">
+                                        <img src="../icons/linkedin.png" alt="mobile number">
+                                    </a>
+                                </div>
                             </div>
-                            <div>
-                                <a href="#">
-                                    <img src="../icons/linkedin.png" alt="mobile number">
-                                </a>
-                            </div>
+    
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
+            
+                <div>
+                        <div class="member">
+                            <div class="member-image">
+                                <img src="../team images/team-members/IMG_20191126_235630.jpg" alt="">
+                            </div>
+        
+                            <div class="details">
+                                <div class="perse-des-small">
+                                    <h2>Member</h2>
+                                    <h4>Vinayak Varshney</h4>
+                                </div>
+                                <div class="linksofmembers">
+                                    <div>
+                                        <a href="#">
+                                            <img src="../icons/email.png" alt=" email address">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="../icons/insta2.png" alt="fb link">
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="#">
+                                            <img src="../icons/linkedin.png" alt="mobile number">
+                                        </a>
+                                    </div>
+                                </div>
+        
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div>
+                            <div class="member">
+                                <div class="member-image">
+                                    <img src="../team images/team-members/IMG_20191127_000107.jpg" alt="">
+                                </div>
+            
+                                <div class="details">
+                                    <div class="perse-des-small">
+                                        <h2>Member</h2>
+                                        <h4>Arsalan Sartaj</h4>
+                                    </div>
+                                    <div class="linksofmembers">
+                                        <div>
+                                            <a href="#">
+                                                <img src="../icons/email.png" alt=" email address">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="../icons/insta2.png" alt="fb link">
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="../icons/linkedin.png" alt="mobile number">
+                                            </a>
+                                        </div>
+                                    </div>
+            
+                                </div>
+                            </div>
+                        </div>
+            
+                        
+                        
+            
+            </section>
+        </div>
 
     </main>
     <!-- Footer -->
-    <footer class="page-footer font-small stylish-color-dark pt-4">
-
-        <!-- Footer Links -->
-        <div class="container text-center text-md-left">
-
-            <!-- Grid row -->
-            <div class="row">
-
-                <!-- Grid column -->
-                <div class="col-md-4 mx-auto">
-
-                    <!-- Content -->
-                    <h5 class="font-weight-bold mt-3 mb-4">Contact Us</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            Email : <a href="mailto:zhcetformularacing@gmail.com">zhcetformularacing@gmail.com</a>
-                        </li>
-                        <br>
-                        <li>
-                            Phone No. : <a href="tel:+919876543210">+91 9876543210</a>
-                        </li>
-                        <br>
-                        <li>
-                            <address>Address :<br> SAE zhcet,AMU,Aligarh,Uttar Pradesh,India</address>
-                        </li>
-                    </ul>
-
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Links</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Link 1</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 2</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 3</a>
-                        </li>
-                        <li>
-                            <a href="#!">Link 4</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-
-                <hr class="clearfix w-100 d-md-none">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mx-auto">
-
-                    <!-- Links -->
-                    <h5 class="font-weight-bold mt-3 mb-4">Cars</h5>
-
-                    <ul class="list-unstyled">
-                        <li>
-                            <a href="#!">Zfr4.0</a>
-                        </li>
-                        <li>
-                            <a href="#!">Zfr3.0</a>
-                        </li>
-                        <li>
-                            <a href="#!">Zfr2.0</a>
-                        </li>
-                        <li>
-                            <a href="#!">Zfr1.0</a>
-                        </li>
-                    </ul>
-
-                </div>
-                <!-- Grid column -->
-                <!-- Grid row -->
-
-            </div>
-            <!-- Footer Links -->
-
-            <hr>
-
-            <!-- Call to action -->
-            <ul class="list-unstyled list-inline text-center py-2">
-                <li class="list-inline-item">
-                    <h5 class="mb-1">Support Us</h5>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#!" class="btn btn-danger btn-rounded">Donate here!</a>
-                </li>
-            </ul>
-            <!-- Call to action -->
-
-            <hr>
-
-            <!-- Social buttons -->
-            <ul class="list-unstyled list-inline text-center" id="social-buttons">
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-fb mx-1">
-                        <img src="../icons/fb.png" alt="fb link">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-tw mx-1">
-                        <img src="../icons/twitter.png" alt="twitter link">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-li mx-1">
-                        <img src="../icons/linkedin.png" alt="linkedin link">
-                    </a>
-                </li>
-                <li class="list-inline-item">
-                    <a href="#" class="btn-floating btn-instagram mx-1">
-                        <img src="../icons/insta2.png" alt="insta link">
-                    </a>
-                </li>
-            </ul>
-            <!-- Social buttons -->
-
-            <!-- developer -->
-            <div class="footer-copyright text-center py-3" id="developer">Developed by
-                <a href="https://mdbootstrap.com/education/bootstrap/"> Mohd Anas,Gauhar Ayub Khan & Hammad Basit</a>
-            </div>
-            <!-- developer -->
-
+    <footer include-html="../template/footer.html" class="page-footer font-small stylish-color-dark pt-4">
     </footer>
     <!-- Footer end-->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -515,6 +997,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+    <script>includeHTML();</script>
 </body>
 
 </html>
