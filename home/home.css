@@ -1,17 +1,17 @@
 body{
     overflow-x: hidden;
 }
+
 #description-zfr{
     margin-top: 6%;
 }
+
 #main_image {
-    /* background-image: url(../images/real2.jpeg);
-    background-size: 100% 100%;
-    background-repeat: no-repeat; */
     position: absolute;
     top:0;
     width: 100%;
 }
+
 #header_text {
     background: rgba(0, 0, 0, 0.6);
     color: rgb(255, 255, 255);
@@ -23,45 +23,22 @@ body{
     text-shadow: black 5px 5px 5px;
 }
 
-
 #wrapper {
     position: relative;
     height: 100vh;
     overflow: hidden;
 }
 
-#featured {
-    position: absolute;
-    width: calc(100vh * (1000 / 562));
-    /*  video width / height  */
-    height: calc(100vw * (562 / 1000));
-    /*  video height / width  */
-    min-width: 100%;
-    min-height: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#myVideo {
-    position: absolute;
-    top: 75.91px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
 .bd-example {
-    margin-top: 70px;
+    margin-top: 68.25px;
     position: relative;
     z-index: 0;
     width: 100%;
 }
 
 .carousel-item img {
-    height: 90vh;
+    height: calc(100vh - 68.25px);
 }
-
 
 .about-text {
     padding: 5%;
@@ -71,7 +48,6 @@ body{
     width: 80%;
     margin: auto;
     min-width: 300px;
-
 }
 
 p {
@@ -148,7 +124,6 @@ article{
 }
 
 .icon div {
-    /* box-shadow: 0 0 15px -5px rgba(0,0,0,0.32); */
     background: rgb(245, 244, 244);
     height: 50px;
     width: 50px;
@@ -172,7 +147,7 @@ article{
 
 .grid-image .image-container img {
     height: calc(50vw*(562/1000));
-    min-height: 150px;
+    min-height: 200px;
     max-height: 400px;
     border-radius: 12px;
     box-shadow: 0 2px 6px 3px rgba(0, 0, 0, 0.32);
@@ -207,6 +182,7 @@ article{
     border-top: 2px solid goldenrod;
     background: linear-gradient(45deg, rgba(255, 129, 12, 0.712), rgba(253, 96, 82, 0.801));
 }
+
 #form-wrapper:hover #query-line {
     transform: translateY(-10px) scale(1.4);
 }
@@ -262,7 +238,6 @@ form button {
     text-align: center;
     font: 700 2.5em Lobster;
     padding: 30px 5%;
-    /* border-top: 2px solid goldenrod; */
 }
 
 .alter-grid .grid-image {
@@ -292,6 +267,8 @@ form button {
     margin: auto;
     display: block;
     width: 60vw;
+    min-width: 300px;
+    min-height: 200px;
     height: calc(50vw *(562/1000));
 }
 
@@ -302,13 +279,6 @@ form button {
 }
 
 @media screen and (max-width: 767px) {
-
-   
-
-    #myVideo{
-        top: 56.71px;
-        
-    }
 
     .wrapper {
         display: grid;
@@ -335,5 +305,11 @@ form button {
         grid-template-columns: 1fr;
         grid-template-areas: "first"
             "second";
+    }
+    .bd-example {
+        margin-top: 56px;
+    }
+    .carousel-item img {
+        height: calc(100vh - 56px);
     }
 }
