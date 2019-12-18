@@ -54,7 +54,7 @@ nav {
     padding: 0 !important;
 }
 
-.nav-link:hover {
+.nav-link:hover ,.list-inline-item:hover a,.list-unstyled li:hover a{
     color: #e3e6eb;
 }
 
