@@ -1,4 +1,4 @@
-var includeHTML = ()=> {
+const includeHTML = () => {
   var z, i, elmnt, file, xhttp;
   /* Loop through a collection of all HTML elements: */
   z = document.getElementsByTagName("*");
@@ -29,17 +29,16 @@ var includeHTML = ()=> {
     }
   }
 }
+//for navbar autohide on scroll
 
-(function(){
-  var prevScrollpos = window.pageYOffset;
-  window.onscroll = function () {
-    var currentScrollPos = window.pageYOffset;
-    if (prevScrollpos > currentScrollPos - 1) {
-      document.getElementById("navbar").style.top = "0";
-    } else {
-      document.getElementById("navbar").style.top = "-80px";
-    }
-    prevScrollpos = currentScrollPos;
+let prevScrollpos = window.pageYOffset;
+
+window.addEventListener('scroll',(e)=> {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos - 1) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-80px";
   }
-})();
-
+  prevScrollpos = currentScrollPos;
+})
