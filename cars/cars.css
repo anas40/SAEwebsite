@@ -95,7 +95,8 @@ body{
     font-weight: bold;
 }
 
-.team_mem .row{
+.team_mem .row{ /* font-size: 1.5em; */
+
     margin-bottom:3%;
 }
 .team_mem{
@@ -119,8 +120,7 @@ body{
 .points li{
     padding:.4%;
     margin-left:5%;
-    /* font-size: 1.5em; */
-}   
+   }   
 #sidecar{
     position: absolute;
     z-index: 0;
@@ -133,8 +133,6 @@ body{
 
 #sidecar-path{
     position: absolute;
-    /* right: -1088px;
-    top:1200px; */
     top:50;
     right: 32;
     z-index: -1;
@@ -144,8 +142,7 @@ body{
 #sidecar-path img{
     visibility: hidden;
     height: 500px;
-    /* width: 2300px; */
-    width: 55px;
+   width: 55px;
 }
 
 
@@ -194,4 +191,7 @@ body{
     #sidecar-path img{
         height: 2500px;
     }
+}
+@media screen and (min-width:1024px) and (max-width:1100px){
+    
 }
