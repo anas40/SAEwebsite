@@ -1,5 +1,3 @@
-
-
 <head>
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,13 +8,14 @@
   <link rel="stylesheet" href="/general.css">
   <script defer src="https://friconix.com/cdn/friconix.js"></script>
   <script src="/templating.js"></script>
+  <script src="./sidecar.js"></script>
 </head>
 
 <body id="cars-index">
-  
-    <nav include-html="/template/nav.html" class="navbar navbar-expand-lg" id="navbar"></nav>
-  <main>
 
+  <nav include-html="/template/nav.html" class="navbar navbar-expand-lg" id="navbar"></nav>
+
+  <main>
     <!-- header -->
     <section id="cars-head">
       <div class="text-block">
@@ -31,8 +30,7 @@
       <div class="row">
         <div class="col-md-6">
           <div class="image-box">
-            <a href="../cars/zfr-1/index.html"><img
-                src="../images/zfr 1.jpg"></a>
+            <a href="../cars/zfr-1/index.html"><img src="../images/zfr 1.jpg"></a>
           </div>
           <div class="name">
             <a href="../cars/zfr-1/index.html">
@@ -42,8 +40,7 @@
         </div>
         <div class="col-md-6">
           <div class="image-box">
-            <a href="../cars/zfr-2/index.html"><img
-                src="../images/zfr2.0.jpg"></a>
+            <a href="../cars/zfr-2/index.html"><img src="../images/zfr2.0.jpg"></a>
           </div>
           <div class="name">
             <a href="../cars/zfr-2/index.html">
@@ -53,8 +50,7 @@
         </div>
         <div class="col-md-6">
           <div class="image-box">
-            <a href="../cars/zfr-3/index.html"><img
-                src="../team images/DSC_1575.jpg"></a>
+            <a href="../cars/zfr-3/index.html"><img src="../team images/DSC_1575.jpg"></a>
           </div>
           <div class="name">
             <a href="../cars/zfr-3/index.html">
@@ -65,8 +61,7 @@
         <div class="col-md-6">
           <div class="image-box">
             <a href="../cars/zfr-4/index.html">
-              <img
-                src="../team images/4.jpg"></a>
+              <img src="../team images/4.jpg"></a>
           </div>
           <div class="name">
             <a href="../cars/zfr-4/index.html">
@@ -76,8 +71,7 @@
         </div>
         <div class="col-md-6">
           <div class="image-box">
-            <a href="../cars/zfr-4.1/index.html"><img
-                src="../images/IMG_20190717_163959.jpg"></a>
+            <a href="../cars/zfr-4.1/index.html"><img src="../images/IMG_20190717_163959.jpg"></a>
           </div>
           <div class="name">
             <a href="../cars/zfr-4.1/index.html">
@@ -96,26 +90,36 @@
             </a>
           </div>
         </div>
-        
+
       </div>
     </section>
     <!-- </div> -->
     <!-- End of cars of Sae Zhcet -->
     <div class="container">
       <div class="row sponsor">
-          <div class="col-md-6">
-              <img src="https://www.marshall.edu/it/files/mathworks-logo.jpg" width="100%" height="100%">
-            </div>
-            <div class="col-md-6">
-              <img src="https://yt3.ggpht.com/a/AGF-l79atE0GzZ5jy-Fmio_r6gz6xdXY3N4NwPb8Og=s900-c-k-c0xffffffff-no-rj-mo" width="100%" height="100%">
-            </div>
-            <div class="col-md-6">
-              <img src="http://alwafagroupuae.com/Alwafa-Dashboard/uploads/clients/efs%20logo.png" width="100%" height="100%">
-            </div>
-            <div class="col-md-6">
-              <img src="https://images.ipros.jp/public/company/image/89b/2046702/IPROS29723033195651003817.png?w=220&h=220" width="100%" height="100%">
-            </div>
+        <div class="col-md-6">
+          <img src="https://www.marshall.edu/it/files/mathworks-logo.jpg" width="100%" height="100%">
+        </div>
+        <div class="col-md-6">
+          <img src="https://yt3.ggpht.com/a/AGF-l79atE0GzZ5jy-Fmio_r6gz6xdXY3N4NwPb8Og=s900-c-k-c0xffffffff-no-rj-mo"
+            width="100%" height="100%">
+        </div>
+        <div class="col-md-6">
+          <img src="http://alwafagroupuae.com/Alwafa-Dashboard/uploads/clients/efs%20logo.png" width="100%"
+            height="100%">
+        </div>
+        <div class="col-md-6">
+          <img src="https://images.ipros.jp/public/company/image/89b/2046702/IPROS29723033195651003817.png?w=220&h=220"
+            width="100%" height="100%">
+        </div>
       </div>
+    </div>
+
+    <div id="sidecar">
+      <img src="/icons/racing-car.png" alt="">
+    </div>
+    <div id="sidecar-path">
+      <img src="/icons/path.jpg" alt="">
     </div>
   </main>
 
@@ -125,13 +129,17 @@
 
   </footer>
   <!-- Footer end-->
-          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-          </script>
-          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-              integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-          </script>
-          <script>includeHTML();</script>
-    </body>
-</html>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script>
+    includeHTML();
+    car_move();
+  </script>
 
+</body>
+
+</html>
