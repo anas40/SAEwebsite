@@ -3,7 +3,7 @@
     top: 68px;
 } */
 body{
-    background:linear-gradient(rgba(10, 10, 10, 0.5), rgba(8, 8, 8, 0.5)), url("../images/imageedit_2_7458214510.jpg") no-repeat center center;
+    background:linear-gradient(rgba(0, 0, 0, 0.898), rgba(0, 0, 0, 0.61)), url("../images/background/formula_background.jpg") no-repeat center center;
     background-size: cover;
 }
 #formula_head{
