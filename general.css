@@ -21,6 +21,7 @@ nav {
 #navbar {
     background-color: rgb(0, 0, 0);
     padding: 8px 0;
+    transition: top 0.5s ease-out;
 }
 
 .nav-item {
@@ -54,7 +55,7 @@ nav {
     padding: 0 !important;
 }
 
-.nav-link:hover {
+.nav-link:hover ,.list-inline-item:hover a,.list-unstyled li:hover a{
     color: #e3e6eb;
 }
 
