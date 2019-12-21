@@ -1,13 +1,14 @@
 const car_move = () => {
     let car = document.getElementById("sidecar").style;
+    let height_main = document.getElementById("main").clientHeight;
+    document.getElementById("path").style.height = height_main;
     var pScrollpos = window.pageYOffset;
     var distance = 200;
-   
-    console.log("I am car moving");
+    
     window.onscroll = () => {
 
         var cScrollPos = window.pageYOffset;
-        if (cScrollPos < 2040) {
+        if (cScrollPos < height_main - 300) {
             distance += cScrollPos - pScrollpos;
             if(cScrollPos<pScrollpos){
                 document.getElementById("sidecar").style.transform = "rotate(270deg)";
