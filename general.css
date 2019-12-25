@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Roboto|Mali&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Algerian|Dosis|Lato|Domine|Open+Sans&display=swap');
 
 
 * {
@@ -110,7 +110,7 @@ body {
 #navbarNav li {
     margin: -8px 16px;
     font-size: 18px;
-    font-family: Roboto;
+    font-family: "Open Sans";
     font-weight: 600;
 }
 

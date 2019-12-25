@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Dosis|Lato|Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
 #cars-index{
     background: #bdc3c7;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
@@ -99,7 +99,6 @@ body{
 .desig{
     font-weight: bold;
 }
-
 .team_mem .row{ /* font-size: 1.5em; */
 
     margin-bottom:3%;

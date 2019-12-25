@@ -1,7 +1,3 @@
-/* body{
-    position: relative;
-    top: 68px;
-} */
 body{
     background:linear-gradient(rgba(0, 0, 0, 0.898), rgba(0, 0, 0, 0.61)), url("../images/background/formula_background.jpg") no-repeat center center;
     background-size: cover;

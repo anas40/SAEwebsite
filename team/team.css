@@ -4,7 +4,6 @@ body{
     background-attachment: fixed;
 }
 main{
-    /* background: linear-gradient(90deg,rgba(255, 255, 255, 0),rgba(255, 255, 255, 0.692),rgba(255, 255, 255, 0)); */
     position: relative;
     top: 70px;
     padding-bottom: 50px;
@@ -106,7 +105,7 @@ main >div{
 }
 .perse-des,.perse-des-small{
     color: rgb(18, 62, 98);
-    font-family: Ubuntu;
+    font-family: Domile;
 }
 .perse-des h2,.perse-des-small h2{
     padding: 1%;
