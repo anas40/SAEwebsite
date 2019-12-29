@@ -52,7 +52,7 @@ main >div{
 .member-image img{
     margin-top: 12px;
     width: 60%;
-    border-radius:50%;
+    border-radius:70% 30% 50% 50% / 70% 70% 30% 30% ;
     box-shadow: 0 0 12px 0px rgb(0, 0, 0); 
 }
 
