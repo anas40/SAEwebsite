@@ -1,13 +1,11 @@
-@import url('https://fonts.googleapis.com/css?family=Lobster|Cinzel|Roboto|Mali&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Aldrich|Algerian|Dosis|Lato|Domine|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cinzel&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Aldrich|Domine|Open+Sans&display=swap');
 
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box !important;
-    /* overflow-x:hidden; */
-
 }
 
 nav {
