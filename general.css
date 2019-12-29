@@ -41,6 +41,10 @@ nav {
     transform: scaleX(0);
     transition: .25s linear;
 }
+.nav-icons{
+    height: 20px;
+    width: 20px;
+}
 
 .nav-link:hover:before,
 .nav-link:focus:before {

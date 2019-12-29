@@ -6,6 +6,11 @@ body{
     margin-top: 6%;
 }
 
+.chevron-solid{
+    height: 20px;
+    width: 20px;
+}
+
 #main_image {
     position: absolute;
     top:0;
