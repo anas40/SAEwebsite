@@ -8,13 +8,14 @@
   <link rel="stylesheet" href="/general.css">
   <script src="/templating.js"></script>
   <script src="./sidecar.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body id="cars-index">
 
   <nav include-html="/template/nav.html" class="navbar navbar-expand-lg" id="navbar"></nav>
 
-  <main id="main">
+  <main id="app">
     <!-- header -->
     <section id="cars-head">
       <div class="text-block">
@@ -27,89 +28,24 @@
     <!-- <div class="container"> -->
     <section id="cars-sae">
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-6" v-for="car in cars" :key="car.id">
           <div class="image-box">
-            <a href="../cars/zfr-1/index.html"><img src="/images/car_images/zfr1.jpg"></a>
+            <a :href="car.link"><img :src="car.image"></a>
           </div>
-          <div class="name">
-            <a href="../cars/zfr-1/index.html">
-              <h2>ZFR 1.0</h2>
+          <div class="name name-center">
+            <a :href="car.link">
+              <h2>{{ car.name }}</h2>
             </a>
           </div>
         </div>
-        <div class="col-md-6">
-          <div class="image-box">
-            <a href="../cars/zfr-2/index.html"><img src="/images/car_images/zfr2.jpg"></a>
-          </div>
-          <div class="name">
-            <a href="../cars/zfr-2/index.html">
-              <h2>ZFR 2.0</h2>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image-box">
-            <a href="../cars/zfr-3/index.html"><img src="/images/car_images/zfr3.jpg"></a>
-          </div>
-          <div class="name">
-            <a href="../cars/zfr-3/index.html">
-              <h2>ZFR 3.0</h2>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image-box">
-            <a href="../cars/zfr-4/index.html">
-              <img src="/images/car_images/zfr4.jpg"></a>
-          </div>
-          <div class="name">
-            <a href="../cars/zfr-4/index.html">
-              <h2>ZFR 4.0</h2>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image-box">
-            <a href="../cars/zfr-4.1/index.html"><img src="/images/car_images/zfr4.1.jpg"></a>
-          </div>
-          <div class="name">
-            <a href="../cars/zfr-4.1/index.html">
-              <h2>ZFR 4.1</h2>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="image-box">
-            <a href="../cars/zfr-5.0/index.html"><img
-                src="https://media.moddb.com/cache/images/mods/1/26/25760/thumb_620x2000/coming_soon.jpg"></a>
-          </div>
-          <div class="name">
-            <a href="../cars/zfr-5.0/index.html">
-              <h2>ZFR 5.0</h2>
-            </a>
-          </div>
-        </div>
-
       </div>
     </section>
     <!-- </div> -->
     <!-- End of cars of Sae Zhcet -->
     <div class="container">
       <div class="row sponsor">
-        <div class="col-md-6">
-          <img src="https://www.marshall.edu/it/files/mathworks-logo.jpg" width="100%" height="100%">
-        </div>
-        <div class="col-md-6">
-          <img src="https://yt3.ggpht.com/a/AGF-l79atE0GzZ5jy-Fmio_r6gz6xdXY3N4NwPb8Og=s900-c-k-c0xffffffff-no-rj-mo"
-            width="100%" height="100%">
-        </div>
-        <div class="col-md-6">
-          <img src="http://alwafagroupuae.com/Alwafa-Dashboard/uploads/clients/efs%20logo.png" width="100%"
-            height="100%">
-        </div>
-        <div class="col-md-6">
-          <img src="https://images.ipros.jp/public/company/image/89b/2046702/IPROS29723033195651003817.png?w=220&h=220"
-            width="100%" height="100%">
+        <div class="col-md-6" v-for="(sponsor,index) in sponsors" :key="index">
+          <img :src="sponsor" width="100%" height="100%">
         </div>
       </div>
     </div>
@@ -137,6 +73,52 @@
   <script>
     includeHTML();
     car_move();
+  </script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        cars: [
+          {
+            image: "/images/car_images/zfr1.jpg",
+            id: 1,
+            name: "ZFR 1.0",
+            link: "../cars/zfr-1/index.html"
+          },
+          {
+            image: "/images/car_images/zfr2.jpg",
+            link: "../cars/zfr-2/index.html",
+            name: "ZFR 2.0",
+            id: 2
+          },
+          {
+            image: "/images/car_images/zfr3.jpg",
+            link: "../cars/zfr-3/index.html",
+            name: "ZFR 3.0",
+            id: 3
+          },
+          {
+            image: "/images/car_images/zfr4.jpg",
+            link: "../cars/zfr-4/index.html",
+            name: "ZFR 4.0",
+            id: 4
+          },
+          {
+            image: "/images/car_images/zfr4.1.jpg",
+            link: "../cars/zfr-4.1/index.html",
+            name: "ZFR 4.1",
+            id: 5
+          },
+          {
+            image: "https://media.moddb.com/cache/images/mods/1/26/25760/thumb_620x2000/coming_soon.jpg",
+            link: "../cars/zfr-5.0/index.html",
+            name: "ZFR 5.0",
+            id: 6
+          },
+        ],
+        sponsors: ["https://www.marshall.edu/it/files/mathworks-logo.jpg","https://yt3.ggpht.com/a/AGF-l79atE0GzZ5jy-Fmio_r6gz6xdXY3N4NwPb8Og=s900-c-k-c0xffffffff-no-rj-mo","http://alwafagroupuae.com/Alwafa-Dashboard/uploads/clients/efs%20logo.png","https://images.ipros.jp/public/company/image/89b/2046702/IPROS29723033195651003817.png?w=220&h=220"]
+      }
+    })
   </script>
 
 </body>
