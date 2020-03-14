@@ -10,12 +10,13 @@
     <link rel="stylesheet" href="team.css">
     <link rel="stylesheet" href="/general.css">
     <script src="/templating.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
 </head>
 
 <body>
     <nav include-html="../template/nav.html" class="navbar navbar-expand-lg" id="navbar">
     </nav>
-    <main>
+    <main id="app">
         <div>
             <div class="department-heading" id="zfr5">
                 <div>
@@ -843,48 +844,6 @@
                     </div>
                 </div>
             </section>
-            <section class="second-tier">
-                <!-- first -->
-                <div>
-                    <div class="member">
-                        <div class="member-image">
-                            <img src="../images/download.png" alt="">
-                        </div>
-
-                        <div class="details">
-                            <div class="perse-des-small">
-                                <h2>Member</h2>
-                                <h4>Imaduddin</h4>
-                            </div>
-                            <div class="linksofmembers">
-                                <div>
-                                    <a href="#">
-                                        <img src="/icons/team_icons/email.png" alt=" email address">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="/icons/team_icons/insta.png" alt="fb link">
-                                    </a>
-                                </div>
-                                <div>
-                                    <a href="#">
-                                        <img src="/icons/team_icons/linkedin.png" alt="mobile number">
-                                    </a>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                
-                
-
-            </section>
-            <section class="second-tier">
-                <!-- first -->
-                
-            </section>
 
             <section class="second-tier">
                 <div>
@@ -1033,6 +992,48 @@
     <script>
         includeHTML();
     </script>
+    <script>
+        var app = new Vue({
+            el: '#app',
+            data: {
+                captain: {
+                    image: "../team images/team-members/IMG-20191124-WA0025.jpg",
+                    position: "Captain",
+                    name: "Sarif Anwar",
+                    links: {
+                        insta: "#",
+                        email: "#",
+                        linkedin: "#"
+                    }
+                },
+                vehicleDynamics: {
+                    lead: {
+                        name: "Mohd Tashif",
+                        position: "Vehicle Dynamics Lead",
+                        image: "../team images/team-members/IMG_20191125_201318.jpg",
+                        links: {
+                            insta: "#",
+                            email: "#",
+                            linkedin: "#"
+                        }
+                    },
+                    members: [
+                    {
+                        name: "",
+                        position: "",
+                        image: "",
+                        links: {
+                            insta: "#",
+                            email: "#",
+                            linkedin: "#"
+                        }
+                    }
+                ]
+                }
+            }
+        })
+    </script>
+
 </body>
 
 </html>
